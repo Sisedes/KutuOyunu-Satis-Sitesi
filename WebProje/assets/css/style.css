@@ -37,6 +37,7 @@ body {
     font-weight: 400;
     font-family: "Open Sans", sans-serif;
     color: #404040;
+   
     line-height: 24px;
 }
 
@@ -61,6 +62,43 @@ button:focus {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+
+.hakkımızda-bilgi {
+    font-size: 16px; /* Metin boyutunu belirleyin */
+    line-height: 1.5; /* Satır yüksekliğini ayarlayın */
+    text-align: left; /* Metin hizalamasını belirleyin */
+    padding: 10px; /* İçerik etrafındaki boşluğu ayarlayın */
+    background-color: #ffffff; /* Arka plan rengini belirleyin */
+    border: 1px solid #1258af; /* Kenarlık ekleyin */
+    margin-left: 40px; /* Sol taraf için boşluk */
+    margin-right: 40px; /* Sağ taraf için boşluk */
+}
+.misyon-vizyon-bilgi {
+    font-size: 16px; /* Metin boyutunu belirleyin */
+    line-height: 1.5; /* Satır yüksekliğini ayarlayın */
+    text-align: left; /* Metin hizalamasını belirleyin */
+    padding: 10px; /* İçerik etrafındaki boşluğu ayarlayın */
+    background-color: #ffffff; /* Arka plan rengini belirleyin */
+    border: 1px solid #1258af; /* Kenarlık ekleyin */
+    margin-left: 40px; /* Sol taraf için boşluk */
+    margin-right: 40px; /* Sağ taraf için boşluk */
+}
+#misviz-header{
+    color:#1258af;
+}
+.kutular-responsive {
+    max-width: 70%; /* Resmin maksimum genişliğini %100 yapar */
+    height: auto; /* Resmin yüksekliğini otomatik olarak ayarlar */
+}
+
+
+/* Ekran daraldıkça metin boyutunu ve diğer stil özelliklerini ayarlamak için medya sorguları kullanabilirsiniz */
+@media (max-width: 768px) {
+    .hakkımızda-bilgi {
+        font-size: 14px;
+    }
+}
+
 
 img {
     max-width: 100%;
@@ -231,7 +269,7 @@ ul li {
 }
 
 .bg-black {
-    background: #444444;
+    background: #1258af;
 }
 
 .c-red {
@@ -693,28 +731,29 @@ body.modal-open {
 
 .tooltip>.tooltip-inner {
     font-size: 13px;
-    background-color: #d8373e;
+    background-color: #f3c849;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
 }
 
 .tooltip.bs-tooltip-top .arrow:before {
-    border-top-color: #d8373e;
+    border-top-color: #f3c849;
 }
 
 .tooltip.bs-tooltip-left .arrow:before {
-    border-left-color: #d8373e;
+    border-left-color: #f3c849;
 }
 
 /*------ custom tooltip end -------*/
 /*------- header top start -------*/
 .header-top-area {
     padding: 6px 0;
+    background-color: #1258af;
 }
 
 .header-top-area .header-call-action a {
-    color: #444444;
+    color: #ffffff; /*en üstteki bilgi yazıları renkleri*/
     font-size: 12px;
     display: inline-block;
     padding-right: 20px;
@@ -732,7 +771,7 @@ body.modal-open {
 }
 
 .header-top-area .header-call-action a:hover {
-    color: #d8373e;
+    color: #f3c849;
 }
 
 @media only screen and (max-width: 767px) {
@@ -740,7 +779,7 @@ body.modal-open {
         padding-top: 5px;
         margin-top: 5px;
         display: inline-block;
-        border-top: 1px solid #999;
+        border-top: 1px solid #1258af;
     }
 }
 
@@ -775,28 +814,38 @@ body.modal-open {
 
 .header-top-area .header-top-right ul li .header-top-dropdown a.dropdown-toggle {
     cursor: pointer;
+    color: #ffffff;
+
 }
 
 .header-top-area .header-top-right ul li .header-top-dropdown a.dropdown-toggle:after {
     display: none;
+    color: #1258af;
 }
 
 .header-top-area .header-top-right ul li .header-top-dropdown a i {
     padding-left: 3px;
+    color:#ffffff; /*küçük ok*/
 }
 
 .header-top-area .header-top-right ul li a {
-    color: #444444;
+    color: #ffffff;
+    background-color: #1258af;
     font-size: 12px;
     text-transform: capitalize;
 }
 
 .header-top-area .header-top-right ul li a:hover {
-    color: #d8373e;
+    color: #f3c849;
 }
 
 .header-top-area .header-top-right ul li:first-child {
     margin-left: 0;
+    color: #1258af;
+}
+.header-top-area .header-top-right ul li .header-top-dropdown a.dropdown-toggle {
+    cursor: pointer;
+    color: #ffffff;
 }
 
 /*------- header top end -------*/
@@ -866,7 +915,7 @@ only screen and (max-width: 767px) {
 
 .header-middle-right .header-middle-shipping .single-block-shipping .shipping-icon i {
     font-size: 24px;
-    color: #d8373e;
+    color: #f3c849;
     line-height: 46px;
 }
 
@@ -877,7 +926,7 @@ only screen and (max-width: 767px) {
 }
 
 .header-middle-right .header-middle-shipping .single-block-shipping .shipping-content h5 {
-    color: #444444;
+    color: #000000;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -895,8 +944,8 @@ only screen and (max-width: 767px) {
 }
 
 .header-middle-right .header-middle-shipping .single-block-shipping:hover .shipping-icon {
-    background-color: #d8373e;
-    border-color: #d8373e;
+    background-color: #f3c849;
+    border-color: #f3c849;
 }
 
 .header-middle-right .header-middle-shipping .single-block-shipping:hover .shipping-icon i {
@@ -953,7 +1002,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     height: 52px;
     padding: 0 70px 0 10px;
     width: 100%;
-    border: 2px solid #444444;
+    border: 2px solid #000000; /*arama kutusu çerçevesi*/
     border-right: 2px solid transparent;
     position: relative;
 }
@@ -969,12 +1018,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     right: 0;
     width: 56px;
     height: 52px;
-    color: #ffffff;
+    color: #000000;
     position: absolute;
     display: inline-block;
     cursor: pointer;
-    border: 2px solid #444444;
-    background-color: #444444;
+    border: 2px solid #000000;
+    background-color: #ffffff;
 }
 
 @media only screen and (max-width: 575px) {
@@ -990,12 +1039,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .header-middle-right .header-middle-block .header-aramakutusu button.arama-butonu:hover {
-    background-color: #d8373e;
-    border-color: #d8373e;
+    background-color: #f3c849;
+    border-color: #f3c849;
 }
 
 .header-middle-right .header-middle-block .header-aramakutusu button.arama-butonu:hover i {
-    color: #ffffff;
+    color: #000000;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart {
@@ -1015,7 +1064,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
-    background-color: #444444;
+    background-color: #1258af; /*sağ üst kart arkaplan*/
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -1052,12 +1101,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .header-middle-right .header-middle-block .header-mini-cart:hover {
-    background-color: #d8373e;
+    background-color: #f3c849;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart:hover .mini-cart-btn span.cart-notification {
-    color: #d8373e;
-    background-color: #ffffff !important;
+    color: #f3c849;
+    background-color: #f3c849 !important;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart .mini-cart-btn {
@@ -1089,9 +1138,9 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     -ms-flex-basis: 54px;
     -ms-flex-preferred-size: 54px;
     flex-basis: 54px;
-    border-right: 2px solid #ffffff;
+    border-right: 2px solid #ffffff; /*alışveriş arabası ve tutar arasındaki çizgi*/
     line-height: 52px;
-    color: #ffffff;
+    color: #ffffff;/*sağ üst alışveriş arabası*/
     font-size: 20px;
     position: relative;
 }
@@ -1103,6 +1152,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
         -ms-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+        
     }
 }
 
@@ -1118,7 +1168,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     position: absolute;
     border-radius: 50%;
     display: block;
-    background-color: #d8373e;
+    background-color: #ffffff;
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
@@ -1170,6 +1220,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     color: #ffffff;
     font-size: 20px;
     font-weight: 600;
+    
 }
 
 @media only screen and (max-width: 575px) {
@@ -1197,7 +1248,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     width: 300px;
     top: 100%;
     right: 0;
-    background-color: #ffffff;
+    background-color: #ffffff; /*alışveriş sepeti rengi*/
     position: absolute;
     padding: 20px 20px 0 20px;
     display: none;
@@ -1244,15 +1295,15 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li .cart-info h4 a {
-    color: #222222;
+    color: #000000;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li .cart-info h4 a:hover {
-    color: #d8373e;
+    color: #000000;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li .cart-info span {
-    color: #d8373e;
+    color: #f3c849;
     font-size: 16px;
     margin-top: 10px;
     display: block;
@@ -1260,7 +1311,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li .cart-info p {
     font-size: 12px;
-    color: #404040;
+    color: #000000;
     text-transform: capitalize;
 }
 
@@ -1270,13 +1321,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     -ms-flex: 0 0 20px;
     flex: 0 0 20px;
     font-size: 18px;
-    color: #444444;
+    color: #000000;
     text-align: center;
     cursor: pointer;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li .del-icon:hover {
-    color: #d8373e;
+    color: #f3c849;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li.mini-cart-price {
@@ -1284,14 +1335,14 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li.mini-cart-price .subtotal {
-    color: #444444;
+    color: #000000; /*Toplam fiyat yazı rengi*/
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li.mini-cart-price .subtotal-price {
-    color: #444444;
+    color: #000000;
     font-size: 14px;
     font-weight: 600;
     margin-left: auto;
@@ -1314,7 +1365,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li.checkout-btn a:hover {
-    background-color: #d8373e;
+    background-color: #f9af51;
 }
 
 /*---- header middle style 2 ----*/
@@ -1358,7 +1409,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .main-header-inner .category-toggle-wrap .category-toggle {
     width: 100%;
-    background-color: #d8373e;
+    background-color: #1258af;
     border: none;
     cursor: pointer;
     color: #ffffff;
@@ -1390,11 +1441,11 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     width: 50px;
     line-height: 45px;
     text-align: center;
-    background-color: #b8242a;
+    background-color: #1258af;
 }
 
 .main-header-inner .category-toggle-wrap .category-toggle .cat-icon i {
-    color: #d8373e;
+    color: #1258af;
     font-size: 14px;
     width: 18px;
     height: 18px;
@@ -1403,7 +1454,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: #1258af;
 }
 
 .main-header-inner .category-toggle-wrap nav.category-menu {
@@ -6614,27 +6665,21 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 /*------ contact info area end -------*/
-#map_content {
-    height: 500px;
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Or you can use a different aspect ratio, like 75% for a 4:3 aspect ratio. */
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    #map_content {
-        height: 400px;
-    }
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
-@media only screen and (max-width: 767px) {
-    #map_content {
-        height: 300px;
-    }
-}
-
-@media only screen and (max-width: 575px) {
-    #map_content {
-        height: 200px;
-    }
-}
 
 /*----- breadcrumb style css start -----*/
 .breadcrumb-wrap {
@@ -7097,12 +7142,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     padding: 0px 15px;
     line-height: 34px;
     cursor: pointer;
-    background: #d8373e;
+    background: #1258af;
     text-transform: uppercase;
 }
 
 .footer-top-wrapper .newsletter__wrap .newsletter__box form button:hover {
     background-color: #a32025;
+    color:#ffffff;
 }
 
 @media only screen and (max-width: 479px) {
@@ -7169,7 +7215,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 /* ------- footer top end ------- */
 /* -------- footer widget start -------- */
 .footer-widget .widget-title h4 {
-    color: #444444;
+    color: #000000;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
@@ -7205,7 +7251,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .footer-widget .widget-body ul li a {
-    color: #444444;
+    color: #1258af;
     font-size: 13px;
     text-transform: capitalize;
     position: relative;
