@@ -35,7 +35,7 @@ Table of content
 body {
     font-size: 14px;
     font-weight: 400;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Brush Script MT", Cursive;
     color: #404040;
    
     line-height: 24px;
@@ -73,16 +73,35 @@ button:focus {
     margin-left: 40px; /* Sol taraf için boşluk */
     margin-right: 40px; /* Sağ taraf için boşluk */
 }
+/*misyon-vizyon-bilgi*/
 .misyon-vizyon-bilgi {
-    font-size: 16px; /* Metin boyutunu belirleyin */
-    line-height: 1.5; /* Satır yüksekliğini ayarlayın */
-    text-align: left; /* Metin hizalamasını belirleyin */
-    padding: 10px; /* İçerik etrafındaki boşluğu ayarlayın */
-    background-color: #ffffff; /* Arka plan rengini belirleyin */
-    border: 1px solid #1258af; /* Kenarlık ekleyin */
-    margin-left: 40px; /* Sol taraf için boşluk */
-    margin-right: 40px; /* Sağ taraf için boşluk */
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 3px solid #1258af;
+    margin-left: 40px;
+    margin-right: 40px;
 }
+
+/* Responsive Tasarım */
+@media only screen and (max-width: 600px) {
+    .misyon-vizyon-bilgi {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .misyon-vizyon-bilgi {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 15px;
+    }
+}
+/*misyon-vizyon-bilgi son*/
 #misviz-header{
     color:#1258af;
 }
@@ -90,6 +109,160 @@ button:focus {
     max-width: 70%; /* Resmin maksimum genişliğini %100 yapar */
     height: auto; /* Resmin yüksekliğini otomatik olarak ayarlar */
 }
+.istatistik-grafikler{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 3px solid #1258af;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex; /* Flexbox kullanarak içeriğin yatay düzenlenmesi */
+    justify-content: space-between; /* Elemanlar arasında boşluk bırakma */
+}
+.grafik-container {
+    flex: 1; /* Eşit genişlikte alan paylaşımı */
+    margin-right: 20px; /* İstenirse elemanlar arasında sağda boşluk bırakabilirsiniz */
+    border: 6px solid #1258af;
+}
+
+.grafik-container:last-child {
+    margin-right: 0; /* Son elemanın sağ tarafındaki boşluğu kaldırma */
+}
+.urun-bilgisi{
+    flex: 1; /* Eşit genişlikte alan paylaşımı */
+    margin-right: 20px; /* İstenirse elemanlar arasında sağda boşluk bırakabilirsiniz */
+    border: 6px solid #1258af;
+}
+.urun-bilgisi:last-child{
+    margin-right:0;
+}
+.urun-icerik {
+    display: flex;
+    justify-content: space-between; /* İki bölümü eşit genişlikte yan yana yerleştirme */
+}
+.productt{
+display: flex;
+justify-content: space-between;
+}
+.hehe{
+    margin-left:100px;
+}
+
+/* .product ve .urun-bilgisi bölümlerine genişlik verme */
+.product, .urun-bilgisi {
+    flex: 0 0 48%; /* İstenilen genişlikte ayarlayabilirsiniz */
+    /* Diğer stiller buraya eklenebilir */
+}
+.chart1{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    padding: 10px;
+    
+    margin-left: 6px;
+}
+.mySlides {display:none;
+width: 100%;
+height: auto;}
+.w3-content {
+    position: relative;
+    width: 100%;
+  }
+  
+  .w3-button {
+    position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Şeffaf siyah arka plan */
+  color: white; /* Buton metni rengi */
+  border: none;
+  padding: 20px; /* Buton boyutu ayarı */
+  cursor: pointer;
+  font-size: 18px;
+  }
+  
+  .w3-display-left {
+    left: 0;
+  }
+  
+  .w3-display-right {
+    right: 0;
+  }
+
+  .product {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .product__images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product__main-image {
+    max-width: 500px;
+    max-height: 600px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #070707;
+  }
+  
+  .product__slider-wrap {
+    max-width: 500px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .product__slider {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .product__image {
+    max-width: 180px;
+    max-height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 0.25rem;
+    border: 1px solid #070707;
+  }
+  
+  .product__image:first-child {
+    margin-left: 0;
+  }
+  
+  .product__image:last-child {
+    margin-right: 0;
+  }
+  
+  .product__image:hover {
+    opacity: 1;
+  }
+  
+  .product__image--active {
+    opacity: 1;
+  }
+  
+  .product__slider::-webkit-scrollbar {
+    height: 10px;
+  }
+  
+  .product__slider::-webkit-scrollbar-thumb {
+    background-color: #f9564f;
+    border-radius: 50px;
+  }
+
+  
 
 
 /* Ekran daraldıkça metin boyutunu ve diğer stil özelliklerini ayarlamak için medya sorguları kullanabilirsiniz */
@@ -230,6 +403,46 @@ ul li {
 .container {
     max-width: 1200px;
 }
+.en-alt-bilgi {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kutu {
+            width: 350px;
+            height: 560px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            margin: 10px;
+            display: inline-block; 
+            background-color:#6c91bc ;/* Yan yana kutular için */
+        }
+
+        .kutu img {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .kutu a {
+            text-decoration: none;
+            color: black;
+        }
+        .sepete-ekle-alt-bilgi {
+            background-color: #b575ff;
+        color: #fff;
+        padding: 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+        }
+        .kutu p{
+            color:white;
+        }
+
 
 /* .wrapper {
     &.boxed-layout{
@@ -246,18 +459,22 @@ ul li {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+
+    margin-left:70px;
 }
 
 .ratings span {
     color: #ffba00;
     margin-right: 3px;
     font-size: 12px;
+
 }
 
 .ratings .pro-review span {
     color: #a5a5a5;
     font-size: 12px;
     padding-left: 5px;
+
 }
 
 .bg-gray {
@@ -4813,20 +5030,26 @@ only screen and (max-width: 767px) {
     margin-top: -4px;
     padding-bottom: 10px;
     text-transform: capitalize;
+    margin-left:70px;
+    
 }
 
 @media only screen and (max-width: 575px) {
     .product-details-des h3 {
         font-size: 20px;
+    margin-left:0px;
+
     }
 }
 
 .product-details-des h3 a {
+    margin-left:0px;
     color: #444444;
 }
 
 .product-details-des h3 a:hover {
     color: #d8373e;
+    margin-left:0px;
 }
 
 .product-details-des h6 {
@@ -4835,24 +5058,29 @@ only screen and (max-width: 767px) {
     line-height: 16px;
     padding: 10px 0;
     text-transform: capitalize;
+    margin-left:50px;
 }
 
 @media only screen and (max-width: 767px) {
     .product-details-des h6 {
         padding: 0;
-    }
+    margin-left:50px;
+}
 }
 
 .product-details-des h6 a {
     color: #444444;
+    margin-left:0px;
 }
 
 .product-details-des h6 a:hover {
     color: #d8373e;
+    margin-left:0px;
 }
 
 .product-details-des .pricebox {
     padding-top: 10px;
+    margin-left:0px;
 }
 
 .product-details-des .pricebox .regular-price {
@@ -4860,12 +5088,14 @@ only screen and (max-width: 767px) {
     font-weight: 700;
     line-height: 24px;
     color: #d8373e;
+    margin-left:70px;
 }
 
 @media only screen and (max-width: 575px) {
     .product-details-des .pricebox .regular-price {
         font-size: 18px;
-    }
+    margin-left:50px;
+}
 }
 
 .product-details-des .action_link a.buy-btn {
@@ -4878,6 +5108,7 @@ only screen and (max-width: 767px) {
     text-align: center;
     background-color: #d8373e;
     text-transform: capitalize;
+    margin-left:0px;
 }
 
 .product-details-des .action_link a.buy-btn i {
@@ -4887,29 +5118,46 @@ only screen and (max-width: 767px) {
     line-height: 40px;
     float: right;
     background-color: #b8242a;
+    margin-left:0px;
 }
 
 .product-details-des .action_link a.buy-btn:hover i {
     background-color: #a32025;
+    margin-left:0px;
 }
 
 .product-details-des p {
     padding-top: 20px;
     padding-bottom: 10px;
+    margin-left:70px;
+    
 }
+.product-details-des {
+    max-width: none; /* Kısıtlamayı kaldır */
+}
+@media (min-width: 768px) {
+    .product-details-des {
+        max-width: none; /* Kısıtlamayı kaldır */
+    }
+}
+
+
 
 .product-details-des .customer-rev {
     padding-top: 10px;
+    margin-left:0px;
 }
 
 .product-details-des .customer-rev a {
     color: #444444;
     font-size: 13px;
     text-transform: capitalize;
+    margin-left:70px;
 }
 
 .product-details-des .customer-rev a:hover {
     color: #d8373e;
+    margin-left:50px;
 }
 
 .product-details-des .quantity {
@@ -4922,6 +5170,7 @@ only screen and (max-width: 767px) {
     -ms-flex-align: center;
     align-items: center;
     margin-right: 15px;
+    margin-left:50px;
 }
 
 .product-details-des .quantity h5 {
@@ -4931,12 +5180,14 @@ only screen and (max-width: 767px) {
     line-height: 25px;
     margin-right: 10px;
     margin-bottom: 0;
+    margin-left:50px;
 }
 
 @media only screen and (max-width: 479px) {
     .product-details-des .quantity h5 {
         margin-right: 10px;
-    }
+    margin-left:50px;
+}
 }
 
 .product-details-des .quantity .pro-qty {
@@ -4945,6 +5196,7 @@ only screen and (max-width: 767px) {
     border: 1px solid #ddd;
     padding: 0 15px;
     float: left;
+    margin-left:20px;
 }
 
 .product-details-des .quantity .pro-qty .qtybtn {
@@ -4956,6 +5208,7 @@ only screen and (max-width: 767px) {
     text-align: center;
     font-size: 22px;
     color: #404040;
+    margin-left:50px;
 }
 
 .product-details-des .quantity .pro-qty input {
@@ -4967,6 +5220,7 @@ only screen and (max-width: 767px) {
     padding: 0;
     text-align: center;
     background-color: transparent;
+    margin-left:50px;
 }
 
 .product-details-des .availability {
@@ -4978,6 +5232,7 @@ only screen and (max-width: 767px) {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-left:50px;
 }
 
 .product-details-des .availability h5 {
@@ -4988,12 +5243,14 @@ only screen and (max-width: 767px) {
     margin-bottom: 0;
     margin-right: 10px;
     text-transform: capitalize;
+    margin-left:20px;
 }
 
 .product-details-des .availability span {
     color: #22dd77;
     font-size: 14px;
     padding-left: 3px;
+    margin-left:0px;
 }
 
 .product-details-des .useful-links {
@@ -5002,6 +5259,7 @@ only screen and (max-width: 767px) {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    margin-left:50px;
 }
 
 .product-details-des .useful-links a {
@@ -5010,15 +5268,18 @@ only screen and (max-width: 767px) {
     padding: 8px 15px;
     background-color: #a5a5a5;
     text-transform: capitalize;
+    margin-left:20px;
 }
 
 .product-details-des .useful-links a:hover {
     background-color: #d8373e;
+    margin-left:50px;
 }
 
 .product-details-des .useful-links a i {
     font-size: 14px;
     padding-right: 5px;
+    margin-left:50px;
 }
 
 .product-details-des .tag-line {
@@ -5030,6 +5291,7 @@ only screen and (max-width: 767px) {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-left:50px;
 }
 
 .product-details-des .tag-line h5 {
@@ -5039,27 +5301,32 @@ only screen and (max-width: 767px) {
     line-height: 25px;
     margin-bottom: 0;
     margin-right: 20px;
+    margin-left:50px;
 }
 
 @media only screen and (max-width: 479px) {
     .product-details-des .tag-line h5 {
         margin-right: 10px;
-    }
+    margin-left:50px;
+}
 }
 
 .product-details-des .tag-line a {
     color: #404040;
     font-size: 14px;
     margin-right: 10px;
+    margin-left:50px;
 }
 
 .product-details-des .tag-line a:hover {
     color: #d8373e;
+    margin-left:50px;
 }
 
 .product-details-des .share-icon {
     padding-top: 16px;
     border-top: 1px solid #e5e5e5;
+    margin-left:50px;
 }
 
 .product-details-des .share-icon a {
@@ -5074,26 +5341,32 @@ only screen and (max-width: 767px) {
     -moz-border-radius: 3px;
     border-radius: 3px;
     text-transform: capitalize;
+    margin-left:50px;
 }
 
 .product-details-des .share-icon a i {
     padding-right: 5px;
+    margin-left:50px;
 }
 
 .product-details-des .share-icon a.facebook {
     background-color: #3B5999;
+    margin-left:50px;
 }
 
 .product-details-des .share-icon a.twitter {
     background-color: #1DA1F2;
+    margin-left:50px;
 }
 
 .product-details-des .share-icon a.pinterest {
     background-color: #CB2028;
+    margin-left:50px;
 }
 
 .product-details-des .share-icon a.google {
     background-color: #fe6d4c;
+    margin-left:50px;
 }
 
 .product-details-des .color-option {
@@ -5105,6 +5378,7 @@ only screen and (max-width: 767px) {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-left:50px;
 }
 
 .product-details-des .color-option h5 {
@@ -5115,6 +5389,7 @@ only screen and (max-width: 767px) {
     margin-bottom: 5px;
     margin-right: 10px;
     text-transform: capitalize;
+    margin-left:50px;
 }
 
 .product-details-des .color-option li {
@@ -5122,12 +5397,14 @@ only screen and (max-width: 767px) {
     margin-right: 5px;
     padding: 2px;
     border: 1px solid #ccc;
+    margin-left:50px;
 }
 
 .product-details-des .color-option li a {
     height: 30px;
     width: 30px;
     display: block;
+    margin-left:50px;
 }
 
 .product-details-des .pro-size {
@@ -5137,6 +5414,7 @@ only screen and (max-width: 767px) {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-left:50px;
 }
 
 .product-details-des .pro-size h5 {
@@ -5147,34 +5425,41 @@ only screen and (max-width: 767px) {
     margin-bottom: 0;
     margin-right: 10px;
     text-transform: capitalize;
+    margin-left:50px;
 }
 
 .product-details-des .pro-size .nice-select {
     width: 100px;
     height: 40px;
+    margin-left:50px;
 }
 
 .product-details-des .group-product-table {
     display: block;
+    margin-left:50px;
 }
 
 .product-details-des .group-product-table.table-bordered {
     border: none;
+    margin-left:50px;
 }
 
 .product-details-des .group-product-table td {
     width: 33.33%;
     padding: 8px;
     vertical-align: middle;
+    margin-left:50px;
 }
 
 .product-details-des .group-product-table td a {
     color: #404040;
     text-transform: capitalize;
+    margin-left:50px;
 }
 
 .product-details-des .group-product-table td a:hover {
     color: #d8373e;
+    margin-left:50px;
 }
 
 .product-details-des .group-product-table td .pro-qty {
@@ -5183,6 +5468,7 @@ only screen and (max-width: 767px) {
     border: 1px solid #ddd;
     padding: 0 15px;
     float: left;
+    margin-left:50px;
 }
 
 .product-details-des .group-product-table td .pro-qty .qtybtn {
@@ -5195,6 +5481,7 @@ only screen and (max-width: 767px) {
     font-size: 15px;
     font-weight: 700;
     color: #404040;
+    margin-left:50px;
 }
 
 .product-details-des .group-product-table td .pro-qty input {
@@ -5206,10 +5493,13 @@ only screen and (max-width: 767px) {
     padding: 0;
     text-align: center;
     background-color: transparent;
+    margin-left:50px;
 }
 
 /*----- product details content end ----*/
 /*----- reviews area start -----*/
+
+
 .product-review-info .nav.review-tab li a {
     color: #ffffff;
     display: block;
@@ -5489,6 +5779,13 @@ only screen and (max-width: 575px) {
     -o-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
 }
+.product-details-inner {
+    display: flex;
+    justify-content: space-between; /* İçerikleri arasında boşluk bırakarak yayma */
+    align-items: center; /* İçerikleri dikey eksende ortala */
+}
+
+
 
 .checkoutaccordion .card .card-body {
     border: 1px solid #ccc;
