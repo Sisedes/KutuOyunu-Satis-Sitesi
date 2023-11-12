@@ -24,10 +24,20 @@
     <!-- Main Style CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/skin-default.css" rel="stylesheet" id="galio-skin">
+    <script src="assets/js/popup.js"></script>
+    <link rel="stylesheet" href="popup.css">
+    
 </head>
 
 <body>
 
+   <div id="popup">
+        <div class="popup-content">
+    <!-- Popup content goes here -->
+    <p>This is a popup!</p>
+    <button id="closePopup">Close</button>
+        </div>
+</div>
     <!-- color switcher start -->
     
     <!-- color switcher end -->
@@ -308,19 +318,29 @@
                     <div class="col-lg-5 col-md-5 order-sm-3">
                         <div class="img-container img-full fix mb-30">
                             <a href="#">
-                                <img src="assets/img/banner/banner_static_top1.jpg" alt="">
+                                <img src="assets/img/banner/pictures_3_1.jpeg"alt="">
+                                <div class="product-action-link">
+                                    <a href="#" data-toggle="modal" data-target="#quick_view2" style="color:transparent"> <span
+                                            data-toggle="tooltip" data-placement="left" title="Quick view"><i
+                                                class="fa fa-search"></i></span> </a>
+                                </div>
                             </a>
                         </div>
                         <div class="img-container img-full fix mb-30">
-                            <a href="#">
-                                <img src="assets/img/banner/banner_static_top2.jpg" alt="">
+                            <a href="#" id="openPopup">
+                                <img src="assets/img/banner/hasbro.jpg" alt="" >
+                                <div class="product-action-link">
+                                    <a href="#" data-toggle="modal" data-target="#quick_view1" style="color:transparent"> <span
+                                            data-toggle="tooltip" data-placement="left" title="Quick view"><i
+                                                class="fa fa-search"></i></span> </a>
+                                </div>
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6 order-2 order-md-3">
                         <div class="img-container img-full fix">
-                            <a href="#">
-                                <img src="assets/img/banner/banner_static_top3.jpg" alt="">
+                            <a href="marvel.html">
+                                <img  src="assets/img/marvel/marvel-kare-scaled.jpg" alt="">
                             </a>
                         </div>
                     </div>
@@ -339,22 +359,22 @@
                             <!-- hot deals area start -->
                             <div class="main-sidebar hot-deals-wrap mb-30">
                                 <div class="section-title-2 d-flex justify-content-between mb-28">
-                                    <h3>hot deals</h3>
+                                    <h3>Fırsatlar</h3>
                                     <div class="slick-append"></div>
                                 </div> <!-- section title end -->
                                 <div class="deals-carousel-active slick-padding slick-arrow-style">
                                     <!-- product single item start -->
                                     <div class="product-item fix">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
-                                                <img src="assets/img/product/product-img7.jpg" class="img-pri" alt="">
-                                                <img src="assets/img/product/product-img13.jpg" class="img-sec" alt="">
+                                            <a href="otokrat.html">
+                                                <img src="assets/img/otokrat/otokrat-kutu-oyunu-300x300.jpg" class="img-pri" alt="">
+                                                <img src="assets/img/otokrat/otokrat-kutu-oyunları-scaled.jpg" class="img-sec" alt="">
                                             </a>
                                             <div class="product-label">
-                                                <span>hot</span>
+                                                <span style="background-color: blueviolet;">Sıcak</span>
                                             </div>
                                             <div class="product-action-link">
-                                                <a href="#" data-toggle="modal" data-target="#quick_view"> <span
+                                                <a href="#" data-toggle="modal" data-target="#quick_view_otokrat"> <span
                                                         data-toggle="tooltip" data-placement="left" title="Quick view"><i
                                                             class="fa fa-search"></i></span> </a>
                                                 <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i
@@ -366,9 +386,9 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">vertual product 01</a></h4>
+                                            <h4 style="color: blueviolet;"><a href="otokrat.html">Otokrat</a></h4>
                                             <div class="pricebox">
-                                                <span class="regular-price">$70.00</span>
+                                                <span class="regular-price">419.90₺</span>
                                                 <div class="ratings">
                                                     <span class="good"><i class="fa fa-star"></i></span>
                                                     <span class="good"><i class="fa fa-star"></i></span>
@@ -376,7 +396,7 @@
                                                     <span class="good"><i class="fa fa-star"></i></span>
                                                     <span><i class="fa fa-star"></i></span>
                                                     <div class="pro-review">
-                                                        <span>1 review(s)</span>
+                                                        <span>(143)</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -386,29 +406,29 @@
                                     <!-- product single item start -->
                                     <div class="product-item fix">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
-                                                <img src="assets/img/product/product-img3.jpg" class="img-pri" alt="">
-                                                <img src="assets/img/product/product-img4.jpg" class="img-sec" alt="">
+                                            <a href="kayip-diyarlar.html">
+                                                <img src="assets/img/kayıp-diyarlar/kayıp-diyarlar-kutu-oyunu.jpg" class="img-pri" alt="">
+                                                <img src="assets/img/kayıp-diyarlar/kayıp-diyarlar-masa-oyunları-768x432.jpg" class="img-sec" alt="">
                                             </a>
                                             <div class="product-label">
-                                                <span>hot</span>
+                                                <span style="background-color: blueviolet;">Sıcak</span>
                                             </div>
                                             <div class="product-action-link">
-                                                <a href="#" data-toggle="modal" data-target="#quick_view"> <span
+                                                <a href="#" data-toggle="modal" data-target="#quick_view_kayip_diyarlar"> <span
                                                         data-toggle="tooltip" data-placement="left" title="Quick view"><i
                                                             class="fa fa-search"></i></span> </a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i
+                                                <a  data-toggle="tooltip" data-placement="left" title="Wishlist"><i
                                                         class="fa fa-heart-o"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i
+                                                <a  data-toggle="tooltip" data-placement="left" title="Compare"><i
                                                         class="fa fa-refresh"></i></a>
-                                                <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i
+                                                <a data-toggle="tooltip" data-placement="left" title="Add to cart"><i
                                                         class="fa fa-shopping-cart"></i></a>
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">vertual product 01</a></h4>
+                                            <h4><a href="kayip-diyarlar.html">Kayıp Diyarlar</a></h4>
                                             <div class="pricebox">
-                                                <span class="regular-price">$70.00</span>
+                                                <span class="regular-price">749.90₺</span>
                                                 <div class="ratings">
                                                     <span class="good"><i class="fa fa-star"></i></span>
                                                     <span class="good"><i class="fa fa-star"></i></span>
@@ -416,7 +436,7 @@
                                                     <span class="good"><i class="fa fa-star"></i></span>
                                                     <span><i class="fa fa-star"></i></span>
                                                     <div class="pro-review">
-                                                        <span>1 review(s)</span>
+                                                        <span>(15)</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -426,15 +446,15 @@
                                     <!-- product single item start -->
                                     <div class="product-item fix">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
-                                                <img src="assets/img/product/product-img5.jpg" class="img-pri" alt="">
-                                                <img src="assets/img/product/product-img1.jpg" class="img-sec" alt="">
+                                            <a href="risk.html">
+                                                <img src="assets/img/risk/risk-kutu-oyunu.jpg" class="img-pri" alt="">
+                                                <img src="assets/img/risk/risk-strateji-oyunu-min.jpg" class="img-sec" alt="">
                                             </a>
                                             <div class="product-label">
                                                 <span>hot</span>
                                             </div>
                                             <div class="product-action-link">
-                                                <a href="#" data-toggle="modal" data-target="#quick_view"> <span
+                                                <a href="#" data-toggle="modal" data-target="#quick_view_risk"> <span
                                                         data-toggle="tooltip" data-placement="left" title="Quick view"><i
                                                             class="fa fa-search"></i></span> </a>
                                                 <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i
@@ -446,9 +466,9 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">vertual product 01</a></h4>
+                                            <h4><a href="tm-baslangic.html">Risk</a></h4>
                                             <div class="pricebox">
-                                                <span class="regular-price">$70.00</span>
+                                                <span class="regular-price">749.90₺</span>
                                                 <div class="ratings">
                                                     <span class="good"><i class="fa fa-star"></i></span>
                                                     <span class="good"><i class="fa fa-star"></i></span>
@@ -456,7 +476,7 @@
                                                     <span class="good"><i class="fa fa-star"></i></span>
                                                     <span><i class="fa fa-star"></i></span>
                                                     <div class="pro-review">
-                                                        <span>1 review(s)</span>
+                                                        <span>(155)</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -2147,9 +2167,9 @@
                                 <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip"
                                         data-placement="left" title="Quick view"><i class="fa fa-search"></i></span>
                                 </a>
-                                <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="fa fa-heart-o"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="fa fa-refresh"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
+                                <a  data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                <a data-toggle="tooltip" data-placement="left" title="Compare"><i class="fa fa-refresh"></i></a>
+                                <a" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
                             </div>
                         </div>
                         <div class="product-content">
@@ -2482,7 +2502,68 @@
 
 
     <!-- Quick view modal start -->
-    <div class="modal" id="quick_view">
+    
+    <div class="modal" id="quick_view1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <!-- product details inner end -->
+                            
+                                <div class="product-details-des" >
+                                    <img src="assets/img/banner/hasbro.jpg">
+                                    <br>
+                                    <br>
+                                    <h3 style="color: blueviolet; text-align: center; margin-left: 10px;margin-right: 10px;">Hasbro Oyunları Oyun Kutusunda!</h3>
+                                    <p style="margin-left: 10px; margin-right: 10px;">Sevgili Oyun Severler,<br>
+                                        Sizi heyecanla bilgilendirmek isteriz! Oyun Kutusu olarak, oyun dünyasının devi Hasbro ile yaptığımız yeni bir iş birliğiyle gurur duyuyoruz. Artık en sevdiğiniz Hasbro oyunları, Oyun Kutusu'nda!<br>
+                                        Yakında sizinle buluşturacağımız Hasbro oyunları arasında klasiklerden yeni çıkış yapanlara kadar birçok seçenek bulunacak. Monopoly, Scrabble, Clue ve daha pek çok efsanevi oyun, sitemizde sizleri bekliyor olacak.<br>
+                                        Bu muazzam iş birliği ile oyun kutularınızı renklendirecek, keyifli anlarınıza keyif katacak ve unutulmaz oyun deneyimleri yaşatacağız. Siz de heyecanlanıyor musunuz?<br>
+                                        Takipte kalın, çünkü yakında Hasbro'nun büyülü dünyası Oyun Kutusu'na geliyor! Sitemizi düzenli olarak kontrol edin ve sürprizlerle dolu bu oyun dolu serüvene hazır olun.<br>
+                                        Oyun Kutusu Ekibi olarak, size kaliteli ve eğlenceli oyunlar sunma misyonumuzda bir adım daha ileriye gitmekten dolayı heyecanlıyız. Bu anı bizimle paylaştığınız için teşekkür ederiz.<br>
+                                        Oyun dolu günler dileriz!<br>
+                                        Saygılarımızla,<br> Oyun Kutusu Ekibi. <br>
+                                    </p>
+                                    
+                                </div>
+                    <!-- product details inner end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="quick_view2">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <!-- product details inner end -->
+                            
+                                <div class="product-details-des" >
+                                    <img src="assets/img/banner/pictures_3_1.jpeg">
+                                    <br>
+                                    <br>
+                                    <h3 style="color: blueviolet; text-align: center;margin-left: 10px;margin-right: 10px;">Kaçırılmayacak Fırsat: Oyun Kutusu'nda Büyük Kutu ve Kart Oyunları İndirimi Geliyor!</h3>
+                                    <p style="margin-left: 10px; margin-right: 10px;">Sevgili Oyun Severler,<br>
+                                        Heyecan verici bir haberimiz var! Oyun Kutusu olarak, siz değerli müşterilerimize teşekkür etmek ve oyun dünyasına renk katmak amacıyla büyük bir indirim kampanyası düzenliyoruz.<br>
+                                        Bu süre zarfında Oyun Kutusu'nda birbirinden eğlenceli ve heyecan verici kutu oyunları ile kart oyunlarını çok özel indirimlerle satın alabileceksiniz. Sevdiklerinizle geçireceğiniz keyifli anlar için harika bir fırsat!<br>
+                                        Bu muazzam indirimi kaçırmamak için bizi takip etmeyi unutmayın. Sitemizi düzenli olarak kontrol edin ve favori oyunlarınızı uygun fiyatlarla kapın.<br>
+                                        Unutmayın, eğlenceye giden yol Oyun Kutusu'ndan geçer!.<br>
+                                        Saygılarımızla,<br> Oyun Kutusu Ekibi. <br>
+                                    </p>
+                                    
+                                </div>
+                    <!-- product details inner end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="quick_view_otokrat">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -2495,37 +2576,22 @@
                             <div class="col-lg-5">
                                 <div class="product-large-slider slick-arrow-style_2 mb-20">
                                     <div class="pro-large-img">
-                                        <img src="assets/img/product/product-details-img1.jpg" alt="" />
+                                        <img src="assets/img/otokrat/otokrat-kutu-oyunu.jpg" alt="otokrat" />
                                     </div>
                                     <div class="pro-large-img">
-                                        <img src="assets/img/product/product-details-img2.jpg" alt="" />
                                     </div>
                                     <div class="pro-large-img">
-                                        <img src="assets/img/product/product-details-img3.jpg" alt="" />
                                     </div>
                                     <div class="pro-large-img">
-                                        <img src="assets/img/product/product-details-img4.jpg" alt="" />
                                     </div>
                                     <div class="pro-large-img">
-                                        <img src="assets/img/product/product-details-img5.jpg" alt="" />
                                     </div>
                                 </div>
-                                <div class="pro-nav slick-padding2 slick-arrow-style_2">
-                                    <div class="pro-nav-thumb"><img src="assets/img/product/product-details-img1.jpg"
-                                            alt="" /></div>
-                                    <div class="pro-nav-thumb"><img src="assets/img/product/product-details-img2.jpg"
-                                            alt="" /></div>
-                                    <div class="pro-nav-thumb"><img src="assets/img/product/product-details-img3.jpg"
-                                            alt="" /></div>
-                                    <div class="pro-nav-thumb"><img src="assets/img/product/product-details-img4.jpg"
-                                            alt="" /></div>
-                                    <div class="pro-nav-thumb"><img src="assets/img/product/product-details-img5.jpg"
-                                            alt="" /></div>
-                                </div>
+                                
                             </div>
                             <div class="col-lg-7">
                                 <div class="product-details-des mt-md-34 mt-sm-34">
-                                    <h3><a href="tm-baslangic.html">external product 12</a></h3>
+                                    <h3><a href="otokrat.html">Otokrat</a></h3>
                                     <div class="ratings">
                                         <span class="good"><i class="fa fa-star"></i></span>
                                         <span class="good"><i class="fa fa-star"></i></span>
@@ -2533,27 +2599,22 @@
                                         <span class="good"><i class="fa fa-star"></i></span>
                                         <span><i class="fa fa-star"></i></span>
                                         <div class="pro-review">
-                                            <span>1 review(s)</span>
+                                            <span>143 kullanıcı incelemesi</span>
                                         </div>
                                     </div>
                                     <div class="availability mt-10">
-                                        <h5>Availability:</h5>
-                                        <span>1 in stock</span>
+                                        <h5>Stok Durumu:</h5>
+                                        <span>Stokta Var</span>
                                     </div>
                                     <div class="pricebox">
-                                        <span class="regular-price">$160.00</span>
+                                        <span class="regular-price">419.90₺</span>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br>
-                                        Phasellus id nisi quis justo tempus mollis sed et dui. In hac habitasse platea
-                                        dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet elit. Mauris
-                                        consequat nisi ut mauris efficitur lacinia.</p>
+                                    <p>Şehrinizin kaderi sizin ellerinizde!</p>
                                     <div class="quantity-cart-box d-flex align-items-center mt-20">
                                         <div class="quantity">
-                                            <div class="pro-qty"><input type="text" value="1"></div>
-                                        </div>
-                                        <div class="action_link">
-                                            <a class="buy-btn" href="#">add to cart<i class="fa fa-shopping-cart"></i>
+                                            
+                                        <div class="action_link" style="margin-left:15px;">
+                                            <a class="buy-btn" href="#">Sepete Ekle<i class="fa fa-shopping-cart"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -2564,6 +2625,139 @@
                     <!-- product details inner end -->
                 </div>
             </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal" id="quick_view_kayip_diyarlar">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <!-- product details inner end -->
+                    <div class="product-details-inner">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="product-large-slider slick-arrow-style_2 mb-20">
+                                    <div class="pro-large-img">
+                                        <img src="assets/img/kayıp-diyarlar/kayıp-diyarlar-kutu-oyunu.jpg" alt="kayıp-diyarlar" />
+                                    </div>
+                                    <div class="pro-large-img">
+                                    </div>
+                                    <div class="pro-large-img">
+                                    </div>
+                                    <div class="pro-large-img">
+                                    </div>
+                                    <div class="pro-large-img">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="product-details-des mt-md-34 mt-sm-34">
+                                    <h3><a href="kayip-diyarlar.html">Kayıp Diyarlar</a></h3>
+                                    <div class="ratings">
+                                        <span class="good"><i class="fa fa-star"></i></span>
+                                        <span class="good"><i class="fa fa-star"></i></span>
+                                        <span class="good"><i class="fa fa-star"></i></span>
+                                        <span class="good"><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <div class="pro-review">
+                                            <span>(15)</span>
+                                        </div>
+                                    </div>
+                                    <div class="availability mt-10">
+                                        <h5>Stok Durumu:</h5>
+                                        <span>Stokta Var</span>
+                                    </div>
+                                    <div class="pricebox">
+                                        <span class="regular-price">749.90₺</span>
+                                    </div>
+                                    <p>Kayıp Diyarların fantastik dünyasında yerinizi alın.</p>
+                                    <div class="quantity-cart-box d-flex align-items-center mt-20">
+                                        <div class="quantity">
+                                            
+                                        <div class="action_link" style="margin-left:15px;">
+                                            <a class="buy-btn" href="#">Sepete Ekle<i class="fa fa-shopping-cart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product details inner end -->
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="modal" id="quick_view_risk">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <!-- product details inner end -->
+                    <div class="product-details-inner">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="product-large-slider slick-arrow-style_2 mb-20">
+                                    <div class="pro-large-img">
+                                        <img src="assets/img/risk/risk-kutu-oyunu.jpg" alt="risk" />
+                                    </div>
+                                    <div class="pro-large-img">
+                                    </div>
+                                    <div class="pro-large-img">
+                                    </div>
+                                    <div class="pro-large-img">
+                                    </div>
+                                    <div class="pro-large-img">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="product-details-des mt-md-34 mt-sm-34">
+                                    <h3><a href="kayip-diyarlar.html">Risk</a></h3>
+                                    <div class="ratings">
+                                        <span class="good"><i class="fa fa-star"></i></span>
+                                        <span class="good"><i class="fa fa-star"></i></span>
+                                        <span class="good"><i class="fa fa-star"></i></span>
+                                        <span class="good"><i class="fa fa-star"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                        <div class="pro-review">
+                                            <span>(155)</span>
+                                        </div>
+                                    </div>
+                                    <div class="availability mt-10">
+                                        <h5>Stok Durumu:</h5>
+                                        <span>Stokta Var</span>
+                                    </div>
+                                    <div class="pricebox">
+                                        <span class="regular-price">749.90₺</span>
+                                    </div>
+                                    <p>Gizli hedefinizi takip edin ve ordularınızla dünyanın hakimiyetini ele geçirin!</p>
+                                    <div class="quantity-cart-box d-flex align-items-center mt-20">
+                                        <div class="quantity">
+                                            
+                                        <div class="action_link" style="margin-left:15px;">
+                                            <a class="buy-btn" href="#">Sepete Ekle<i class="fa fa-shopping-cart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product details inner end -->
+                </div>
+            </div>
+        </div>
         </div>
     </div>
     <!-- Quick view modal end -->

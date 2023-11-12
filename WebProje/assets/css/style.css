@@ -274,7 +274,8 @@ height: auto;}
 
 
 img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
@@ -406,7 +407,21 @@ ul li {
 .en-alt-bilgi {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+        max-width: 1250px;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid 2px #f5f5f5;
+        background-color: #f5f5f5;
+        padding: 10px; /* İstenirse padding ekleyebilirsiniz */
+        box-sizing: border-box; /* Padding hesaplamasını düzeltmek için */
 }
+@media (max-width: 600px) {
+        .en-alt-bilgi {
+            /* Küçük ekran boyutları için özel stil değişiklikleri buraya ekleyebilirsiniz */
+            background-color: lightblue;
+        }
+    }
 
 .kutu {
             width: 350px;
