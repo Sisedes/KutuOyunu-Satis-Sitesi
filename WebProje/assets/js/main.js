@@ -536,11 +536,11 @@
 		max: maxPrice,
 		values: [minPrice, maxPrice],
 		slide: function (event, ui) {
-			amount.val("$" + ui.values[0] + " - $" + ui.values[1]);
+			amount.val("₺" + ui.values[0] + " - ₺" + ui.values[1]);
 		}
 	});
-	amount.val(" $" + rangeSlider.slider("values", 0) +
-		" - $" + rangeSlider.slider("values", 1));
+	amount.val(" ₺" + rangeSlider.slider("values", 0) +
+		" - ₺" + rangeSlider.slider("values", 1));
 
 	// product view mode change js
 	$('.product-view-mode').on('click', 'a', function (e) {
@@ -581,7 +581,7 @@
 		language: 'en',
 		callback: mailChimpResponse,
 		// ADD YOUR MAILCHIMP URL BELOW HERE!
-		url: 'https://company.us19.list-manage.com/Abone Ol/post?u=2f2631cacbe4767192d339ef2&amp;id=24db23e68a'
+		url: 'https://company.us19.list-manage.com/subscribe/post?u=2f2631cacbe4767192d339ef2&amp;id=24db23e68a'
 
 	});
 

@@ -10,16 +10,16 @@ Table of content
 7. categories area
 8. testimonial
 9. blog
-10. Firma Logosu area
+10. brand logo area
 11. shop grid view
 12. shop list view
 13. product details
 14. checkout
 15. cart
 16. wishlist
-17. Hesabım
+17. my account
 18. compare
-19. Giriş Yap Kayıt Ol
+19. login register
 20.about us
 21. contact us
 22. banner
@@ -37,7 +37,6 @@ body {
     font-weight: 400;
     font-family: "Brush Script MT", Cursive;
     color: #404040;
-   
     line-height: 24px;
 }
 
@@ -56,13 +55,7 @@ button:focus {
     -o-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
 }
-
-.form-control:focus {
-    border-color: #fedc19;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
+/*EKLEDİM*//*------------------------------------------------------------------------------------------------------------------------*/
 .hakkımızda-bilgi {
     font-size: 16px; /* Metin boyutunu belirleyin */
     line-height: 1.5; /* Satır yüksekliğini ayarlayın */
@@ -73,209 +66,101 @@ button:focus {
     margin-left: 40px; /* Sol taraf için boşluk */
     margin-right: 40px; /* Sağ taraf için boşluk */
 }
-/*misyon-vizyon-bilgi*/
-.misyon-vizyon-bilgi {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-    padding: 10px;
-    background-color: #ffffff;
-    border: 3px solid #1258af;
-    margin-left: 40px;
-    margin-right: 40px;
-}
 
-/* Responsive Tasarım */
-@media only screen and (max-width: 600px) {
-    .misyon-vizyon-bilgi {
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: 14px;
-    }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .misyon-vizyon-bilgi {
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 15px;
-    }
-}
-/*misyon-vizyon-bilgi son*/
-#misviz-header{
-    color:#1258af;
-}
-.kutular-responsive {
-    max-width: 70%; /* Resmin maksimum genişliğini %100 yapar */
-    height: auto; /* Resmin yüksekliğini otomatik olarak ayarlar */
-}
-.istatistik-grafikler{
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-    padding: 10px;
-    background-color: #ffffff;
-    border: 3px solid #1258af;
-    margin-left: 40px;
-    margin-right: 40px;
-    display: flex; /* Flexbox kullanarak içeriğin yatay düzenlenmesi */
-    justify-content: space-between; /* Elemanlar arasında boşluk bırakma */
-}
-.grafik-container {
-    flex: 1; /* Eşit genişlikte alan paylaşımı */
-    margin-right: 20px; /* İstenirse elemanlar arasında sağda boşluk bırakabilirsiniz */
-    border: 6px solid #1258af;
-}
-
-.grafik-container:last-child {
-    margin-right: 0; /* Son elemanın sağ tarafındaki boşluğu kaldırma */
-}
-.urun-bilgisi{
-    flex: 1; /* Eşit genişlikte alan paylaşımı */
-    margin-right: 20px; /* İstenirse elemanlar arasında sağda boşluk bırakabilirsiniz */
-    border: 6px solid #1258af;
-}
-.urun-bilgisi:last-child{
-    margin-right:0;
-}
-.urun-icerik {
-    display: flex;
-    justify-content: space-between; /* İki bölümü eşit genişlikte yan yana yerleştirme */
-}
-.productt{
-display: flex;
-justify-content: space-between;
-}
-.hehe{
-    margin-left:100px;
-}
-
-/* .product ve .urun-bilgisi bölümlerine genişlik verme */
-.product, .urun-bilgisi {
-    flex: 0 0 48%; /* İstenilen genişlikte ayarlayabilirsiniz */
-    /* Diğer stiller buraya eklenebilir */
-}
-.chart1{
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: left;
-    padding: 10px;
-    
-    margin-left: 6px;
-}
-.mySlides {display:none;
-width: 100%;
-height: auto;}
-.w3-content {
+.map-container {
     position: relative;
-    width: 100%;
-  }
-  
-  .w3-button {
-    position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5); /* Şeffaf siyah arka plan */
-  color: white; /* Buton metni rengi */
-  border: none;
-  padding: 20px; /* Buton boyutu ayarı */
-  cursor: pointer;
-  font-size: 18px;
-  }
-  
-  .w3-display-left {
-    left: 0;
-  }
-  
-  .w3-display-right {
-    right: 0;
-  }
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Or you can use a different aspect ratio, like 75% for a 4:3 aspect ratio. */
+}
 
-  .product {
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .product__images {
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .product__main-image {
-    max-width: 500px;
-    max-height: 600px;
-    object-fit: cover;
-    cursor: pointer;
-    border: 1px solid #070707;
-  }
-  
-  .product__slider-wrap {
-    max-width: 500px;
-    min-height: 100px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .product__slider {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-  }
-  
-  .product__image {
-    max-width: 180px;
-    max-height: 100px;
-    object-fit: cover;
-    cursor: pointer;
-    opacity: 0.5;
-    margin: 0.25rem;
-    border: 1px solid #070707;
-  }
-  
-  .product__image:first-child {
-    margin-left: 0;
-  }
-  
-  .product__image:last-child {
-    margin-right: 0;
-  }
-  
-  .product__image:hover {
-    opacity: 1;
-  }
-  
-  .product__image--active {
-    opacity: 1;
-  }
-  
-  .product__slider::-webkit-scrollbar {
-    height: 10px;
-  }
-  
-  .product__slider::-webkit-scrollbar-thumb {
-    background-color: #f9564f;
-    border-radius: 50px;
-  }
-
-  
-
-
-/* Ekran daraldıkça metin boyutunu ve diğer stil özelliklerini ayarlamak için medya sorguları kullanabilirsiniz */
-@media (max-width: 768px) {
-    .hakkımızda-bilgi {
-        font-size: 14px;
-    }
+    border: 0;
 }
 
+.mySlides {display:none;
+    width: 100%;
+    height: auto;}
+    .w3-content {
+        position: relative;
+        width: 100%;
+      }
+      
+      .w3-button {
+        position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5); /* Şeffaf siyah arka plan */
+      color: white; /* Buton metni rengi */
+      border: none;
+      padding: 20px; /* Buton boyutu ayarı */
+      cursor: pointer;
+      font-size: 18px;
+      }
+      
+      .w3-display-left {
+        left: 0;
+      }
+      
+      .w3-display-right {
+        right: 0;
+      }
+
+      .misyon-vizyon-bilgi {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+        padding: 10px;
+        background-color: #ffffff;
+        border: 3px solid #1258af;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .istatistik-grafikler {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: left;
+        padding: 10px;
+        background-color: #ffffff;
+        border: 3px solid #1258af;
+        margin-left: 40px;
+        margin-right: 40px;
+        display: flex; /* Flexbox kullanarak içeriğin yatay düzenlenmesi */
+        justify-content: space-between; /* Elemanlar arasında boşluk bırakma */
+    }
+    
+    .grafik-container {
+        flex: 1; /* Eşit genişlikte alan paylaşımı */
+        margin-right: 20px; /* İstenirse elemanlar arasında sağda boşluk bırakabilirsiniz */
+        border: 6px solid #1258af;
+    }
+    @media screen and (max-width: 768px) {
+        .istatistik-grafikler {
+            flex-direction: column; /* Öğeleri dikey olarak sıralama */
+            margin-left: 10px; /* Sol kenardaki boşluğu azaltma */
+            margin-right: 10px; /* Sağ kenardaki boşluğu azaltma */
+        }
+    
+        .grafik-container {
+            margin-right: 0; /* Sağ boşluğu kaldırma */
+            margin-bottom: 10px; /* Alt boşluk ekleme */
+        }
+    }
+/*EKLEDİM BİTTİ*//*------------------------------------------------------------------------------------------------------------------*/
+
+.form-control:focus {
+    border-color: #fedc19;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
 
 img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
@@ -404,60 +289,6 @@ ul li {
 .container {
     max-width: 1200px;
 }
-.en-alt-bilgi {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-        max-width: 1250px;
-        margin-left: auto;
-        margin-right: auto;
-        border: solid 2px #f5f5f5;
-        background-color: #f5f5f5;
-        padding: 10px; /* İstenirse padding ekleyebilirsiniz */
-        box-sizing: border-box; /* Padding hesaplamasını düzeltmek için */
-}
-@media (max-width: 600px) {
-        .en-alt-bilgi {
-            /* Küçük ekran boyutları için özel stil değişiklikleri buraya ekleyebilirsiniz */
-            background-color: lightblue;
-        }
-    }
-
-.kutu {
-            width: 350px;
-            height: 560px;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            box-sizing: border-box;
-            text-align: center;
-            margin: 10px;
-            display: inline-block; 
-            background-color:#6c91bc ;/* Yan yana kutular için */
-        }
-
-        .kutu img {
-            max-width: 250px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-
-        .kutu a {
-            text-decoration: none;
-            color: black;
-        }
-        .sepete-ekle-alt-bilgi {
-            background-color: #b575ff;
-        color: #fff;
-        padding: 20px;
-        border: none;
-        cursor: pointer;
-        border-radius: 10px;
-        }
-        .kutu p{
-            color:white;
-        }
-
 
 /* .wrapper {
     &.boxed-layout{
@@ -474,26 +305,22 @@ ul li {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-
-    margin-left:70px;
 }
 
 .ratings span {
     color: #ffba00;
     margin-right: 3px;
     font-size: 12px;
-
 }
 
 .ratings .pro-review span {
     color: #a5a5a5;
     font-size: 12px;
     padding-left: 5px;
-
 }
 
 .bg-gray {
-    background-color: #e1e1e1;
+    background-color: #1258af;
 }
 
 .bg-soft-black {
@@ -501,7 +328,7 @@ ul li {
 }
 
 .bg-black {
-    background: #1258af;
+    background: #444444;
 }
 
 .c-red {
@@ -963,29 +790,28 @@ body.modal-open {
 
 .tooltip>.tooltip-inner {
     font-size: 13px;
-    background-color: #f3c849;
+    background-color: #d8373e;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
 }
 
 .tooltip.bs-tooltip-top .arrow:before {
-    border-top-color: #f3c849;
+    border-top-color: #d8373e;
 }
 
 .tooltip.bs-tooltip-left .arrow:before {
-    border-left-color: #f3c849;
+    border-left-color: #d8373e;
 }
 
 /*------ custom tooltip end -------*/
 /*------- header top start -------*/
 .header-top-area {
     padding: 6px 0;
-    background-color: #1258af;
 }
 
 .header-top-area .header-call-action a {
-    color: #ffffff; /*en üstteki bilgi yazıları renkleri*/
+    color: white;
     font-size: 12px;
     display: inline-block;
     padding-right: 20px;
@@ -1003,7 +829,7 @@ body.modal-open {
 }
 
 .header-top-area .header-call-action a:hover {
-    color: #f3c849;
+    color: #d8373e;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1011,7 +837,7 @@ body.modal-open {
         padding-top: 5px;
         margin-top: 5px;
         display: inline-block;
-        border-top: 1px solid #1258af;
+        border-top: 1px solid #999;
     }
 }
 
@@ -1046,38 +872,28 @@ body.modal-open {
 
 .header-top-area .header-top-right ul li .header-top-dropdown a.dropdown-toggle {
     cursor: pointer;
-    color: #ffffff;
-
 }
 
 .header-top-area .header-top-right ul li .header-top-dropdown a.dropdown-toggle:after {
     display: none;
-    color: #1258af;
 }
 
 .header-top-area .header-top-right ul li .header-top-dropdown a i {
     padding-left: 3px;
-    color:#ffffff; /*küçük ok*/
 }
 
 .header-top-area .header-top-right ul li a {
-    color: #ffffff;
-    background-color: #1258af;
+    color: white;
     font-size: 12px;
     text-transform: capitalize;
 }
 
 .header-top-area .header-top-right ul li a:hover {
-    color: #f3c849;
+    color: #d8373e;
 }
 
 .header-top-area .header-top-right ul li:first-child {
     margin-left: 0;
-    color: #1258af;
-}
-.header-top-area .header-top-right ul li .header-top-dropdown a.dropdown-toggle {
-    cursor: pointer;
-    color: #ffffff;
 }
 
 /*------- header top end -------*/
@@ -1147,7 +963,7 @@ only screen and (max-width: 767px) {
 
 .header-middle-right .header-middle-shipping .single-block-shipping .shipping-icon i {
     font-size: 24px;
-    color: #f3c849;
+    color: #d8373e;
     line-height: 46px;
 }
 
@@ -1158,7 +974,7 @@ only screen and (max-width: 767px) {
 }
 
 .header-middle-right .header-middle-shipping .single-block-shipping .shipping-content h5 {
-    color: #000000;
+    color: #444444;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1176,8 +992,8 @@ only screen and (max-width: 767px) {
 }
 
 .header-middle-right .header-middle-shipping .single-block-shipping:hover .shipping-icon {
-    background-color: #f3c849;
-    border-color: #f3c849;
+    background-color: #d8373e;
+    border-color: #d8373e;
 }
 
 .header-middle-right .header-middle-shipping .single-block-shipping:hover .shipping-icon i {
@@ -1202,7 +1018,7 @@ only screen and (max-width: 767px) {
     -ms-flex-pack: space-between;
 }
 
-.header-middle-right .header-middle-block .header-aramakutusu {
+.header-middle-right .header-middle-block .header-middle-searchbox {
     -ms-flex-preferred-size: 700px;
     flex-basis: 700px;
     position: relative;
@@ -1210,73 +1026,73 @@ only screen and (max-width: 767px) {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
 only screen and (min-width: 768px) and (max-width: 991px) {
-    .header-middle-right .header-middle-block .header-aramakutusu {
+    .header-middle-right .header-middle-block .header-middle-searchbox {
         -ms-flex-preferred-size: 550px;
         flex-basis: 550px;
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .header-middle-right .header-middle-block .header-aramakutusu {
+    .header-middle-right .header-middle-block .header-middle-searchbox {
         -ms-flex-preferred-size: 400px;
         flex-basis: 400px;
     }
 }
 
 @media only screen and (max-width: 575px) {
-    .header-middle-right .header-middle-block .header-aramakutusu {
+    .header-middle-right .header-middle-block .header-middle-searchbox {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
 }
 
-.header-middle-right .header-middle-block .header-aramakutusu input {
+.header-middle-right .header-middle-block .header-middle-searchbox input {
     height: 52px;
     padding: 0 70px 0 10px;
     width: 100%;
-    border: 2px solid #000000; /*arama kutusu çerçevesi*/
+    border: 2px solid #444444;
     border-right: 2px solid transparent;
     position: relative;
 }
 
 @media only screen and (max-width: 575px) {
-    .header-middle-right .header-middle-block .header-aramakutusu input {
+    .header-middle-right .header-middle-block .header-middle-searchbox input {
         height: 45px;
     }
 }
 
-.header-middle-right .header-middle-block .header-aramakutusu button.arama-butonu {
+.header-middle-right .header-middle-block .header-middle-searchbox button.search-btn {
     top: 0;
     right: 0;
     width: 56px;
     height: 52px;
-    color: #000000;
+    color: #ffffff;
     position: absolute;
     display: inline-block;
     cursor: pointer;
-    border: 2px solid #000000;
-    background-color: #ffffff;
+    border: 2px solid #444444;
+    background-color: #444444;
 }
 
 @media only screen and (max-width: 575px) {
-    .header-middle-right .header-middle-block .header-aramakutusu button.arama-butonu {
+    .header-middle-right .header-middle-block .header-middle-searchbox button.search-btn {
         height: 45px;
         width: 45px;
     }
 }
 
-.header-middle-right .header-middle-block .header-aramakutusu button.arama-butonu i {
+.header-middle-right .header-middle-block .header-middle-searchbox button.search-btn i {
     font-size: 20px;
     line-height: 48px;
 }
 
-.header-middle-right .header-middle-block .header-aramakutusu button.arama-butonu:hover {
-    background-color: #f3c849;
-    border-color: #f3c849;
+.header-middle-right .header-middle-block .header-middle-searchbox button.search-btn:hover {
+    background-color: #d8373e;
+    border-color: #d8373e;
 }
 
-.header-middle-right .header-middle-block .header-aramakutusu button.arama-butonu:hover i {
-    color: #000000;
+.header-middle-right .header-middle-block .header-middle-searchbox button.search-btn:hover i {
+    color: #ffffff;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart {
@@ -1296,7 +1112,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
-    background-color: #1258af; /*sağ üst kart arkaplan*/
+    background-color: #444444;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
@@ -1333,12 +1149,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .header-middle-right .header-middle-block .header-mini-cart:hover {
-    background-color: #f3c849;
+    background-color: #d8373e;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart:hover .mini-cart-btn span.cart-notification {
-    color: #f3c849;
-    background-color: #f3c849 !important;
+    color: #d8373e;
+    background-color: #ffffff !important;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart .mini-cart-btn {
@@ -1370,9 +1186,9 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     -ms-flex-basis: 54px;
     -ms-flex-preferred-size: 54px;
     flex-basis: 54px;
-    border-right: 2px solid #ffffff; /*alışveriş arabası ve tutar arasındaki çizgi*/
+    border-right: 2px solid #ffffff;
     line-height: 52px;
-    color: #ffffff;/*sağ üst alışveriş arabası*/
+    color: #ffffff;
     font-size: 20px;
     position: relative;
 }
@@ -1384,7 +1200,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
         -ms-flex-basis: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-        
     }
 }
 
@@ -1400,7 +1215,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     position: absolute;
     border-radius: 50%;
     display: block;
-    background-color: #ffffff;
+    background-color: #d8373e;
     -webkit-transition: all 0.4s ease-out;
     -moz-transition: all 0.4s ease-out;
     -o-transition: all 0.4s ease-out;
@@ -1452,7 +1267,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     color: #ffffff;
     font-size: 20px;
     font-weight: 600;
-    
 }
 
 @media only screen and (max-width: 575px) {
@@ -1480,7 +1294,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     width: 300px;
     top: 100%;
     right: 0;
-    background-color: #ffffff; /*alışveriş sepeti rengi*/
+    background-color: #ffffff;
     position: absolute;
     padding: 20px 20px 0 20px;
     display: none;
@@ -1527,15 +1341,15 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li .cart-info h4 a {
-    color: #000000;
+    color: #222222;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li .cart-info h4 a:hover {
-    color: #000000;
+    color: #d8373e;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li .cart-info span {
-    color: #f3c849;
+    color: #d8373e;
     font-size: 16px;
     margin-top: 10px;
     display: block;
@@ -1543,7 +1357,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li .cart-info p {
     font-size: 12px;
-    color: #000000;
+    color: #404040;
     text-transform: capitalize;
 }
 
@@ -1553,13 +1367,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     -ms-flex: 0 0 20px;
     flex: 0 0 20px;
     font-size: 18px;
-    color: #000000;
+    color: #444444;
     text-align: center;
     cursor: pointer;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li .del-icon:hover {
-    color: #f3c849;
+    color: #d8373e;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li.mini-cart-price {
@@ -1567,14 +1381,14 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li.mini-cart-price .subtotal {
-    color: #000000; /*Toplam fiyat yazı rengi*/
+    color: #444444;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li.mini-cart-price .subtotal-price {
-    color: #000000;
+    color: #444444;
     font-size: 14px;
     font-weight: 600;
     margin-left: auto;
@@ -1597,11 +1411,11 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li.checkout-btn a:hover {
-    background-color: #f9af51;
+    background-color: #d8373e;
 }
 
 /*---- header middle style 2 ----*/
-.header-middle-style-2 .header-middle-block .header-aramakutusu {
+.header-middle-style-2 .header-middle-block .header-middle-searchbox {
     max-width: 100%;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
@@ -1641,7 +1455,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .main-header-inner .category-toggle-wrap .category-toggle {
     width: 100%;
-    background-color: #1258af;
+    background-color: #d8373e;
     border: none;
     cursor: pointer;
     color: #ffffff;
@@ -1673,11 +1487,11 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     width: 50px;
     line-height: 45px;
     text-align: center;
-    background-color: #1258af;
+    background-color: #b8242a;
 }
 
 .main-header-inner .category-toggle-wrap .category-toggle .cat-icon i {
-    color: #1258af;
+    color: #d8373e;
     font-size: 14px;
     width: 18px;
     height: 18px;
@@ -1686,7 +1500,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    background-color: #1258af;
+    background-color: #ffffff;
 }
 
 .main-header-inner .category-toggle-wrap nav.category-menu {
@@ -3826,7 +3640,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     text-transform: uppercase;
     line-height: 36px;
     padding: 0 15px;
-    background-color: #444444;
+    background-color: #1258af;
 }
 
 .price-range-wrap .range-slider button.filter-btn:hover {
@@ -4343,7 +4157,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     text-align: center;
     line-height: 36px;
     float: right;
-    background-color: #a32025;
+    background-color: blueviolet;
 }
 
 /*------- product list item end -------*/
@@ -5045,26 +4859,20 @@ only screen and (max-width: 767px) {
     margin-top: -4px;
     padding-bottom: 10px;
     text-transform: capitalize;
-    margin-left:70px;
-    
 }
 
 @media only screen and (max-width: 575px) {
     .product-details-des h3 {
         font-size: 20px;
-    margin-left:0px;
-
     }
 }
 
 .product-details-des h3 a {
-    margin-left:0px;
     color: #444444;
 }
 
 .product-details-des h3 a:hover {
     color: #d8373e;
-    margin-left:0px;
 }
 
 .product-details-des h6 {
@@ -5073,29 +4881,24 @@ only screen and (max-width: 767px) {
     line-height: 16px;
     padding: 10px 0;
     text-transform: capitalize;
-    margin-left:50px;
 }
 
 @media only screen and (max-width: 767px) {
     .product-details-des h6 {
         padding: 0;
-    margin-left:50px;
-}
+    }
 }
 
 .product-details-des h6 a {
     color: #444444;
-    margin-left:0px;
 }
 
 .product-details-des h6 a:hover {
     color: #d8373e;
-    margin-left:0px;
 }
 
 .product-details-des .pricebox {
     padding-top: 10px;
-    margin-left:0px;
 }
 
 .product-details-des .pricebox .regular-price {
@@ -5103,14 +4906,12 @@ only screen and (max-width: 767px) {
     font-weight: 700;
     line-height: 24px;
     color: #d8373e;
-    margin-left:70px;
 }
 
 @media only screen and (max-width: 575px) {
     .product-details-des .pricebox .regular-price {
         font-size: 18px;
-    margin-left:50px;
-}
+    }
 }
 
 .product-details-des .action_link a.buy-btn {
@@ -5121,9 +4922,8 @@ only screen and (max-width: 767px) {
     line-height: 40px;
     display: inline-block;
     text-align: center;
-    background-color: #d8373e;
+    background-color: blueviolet;
     text-transform: capitalize;
-    margin-left:0px;
 }
 
 .product-details-des .action_link a.buy-btn i {
@@ -5132,47 +4932,30 @@ only screen and (max-width: 767px) {
     text-align: center;
     line-height: 40px;
     float: right;
-    background-color: #b8242a;
-    margin-left:0px;
+    background-color: blueviolet;
 }
 
 .product-details-des .action_link a.buy-btn:hover i {
-    background-color: #a32025;
-    margin-left:0px;
+    background-color: blueviolet;
 }
 
 .product-details-des p {
     padding-top: 20px;
     padding-bottom: 10px;
-    margin-left:70px;
-    
 }
-.product-details-des {
-    max-width: none; /* Kısıtlamayı kaldır */
-}
-@media (min-width: 768px) {
-    .product-details-des {
-        max-width: none; /* Kısıtlamayı kaldır */
-    }
-}
-
-
 
 .product-details-des .customer-rev {
     padding-top: 10px;
-    margin-left:0px;
 }
 
 .product-details-des .customer-rev a {
     color: #444444;
     font-size: 13px;
     text-transform: capitalize;
-    margin-left:70px;
 }
 
 .product-details-des .customer-rev a:hover {
     color: #d8373e;
-    margin-left:50px;
 }
 
 .product-details-des .quantity {
@@ -5185,7 +4968,6 @@ only screen and (max-width: 767px) {
     -ms-flex-align: center;
     align-items: center;
     margin-right: 15px;
-    margin-left:50px;
 }
 
 .product-details-des .quantity h5 {
@@ -5195,14 +4977,12 @@ only screen and (max-width: 767px) {
     line-height: 25px;
     margin-right: 10px;
     margin-bottom: 0;
-    margin-left:50px;
 }
 
 @media only screen and (max-width: 479px) {
     .product-details-des .quantity h5 {
         margin-right: 10px;
-    margin-left:50px;
-}
+    }
 }
 
 .product-details-des .quantity .pro-qty {
@@ -5211,7 +4991,6 @@ only screen and (max-width: 767px) {
     border: 1px solid #ddd;
     padding: 0 15px;
     float: left;
-    margin-left:20px;
 }
 
 .product-details-des .quantity .pro-qty .qtybtn {
@@ -5223,7 +5002,6 @@ only screen and (max-width: 767px) {
     text-align: center;
     font-size: 22px;
     color: #404040;
-    margin-left:50px;
 }
 
 .product-details-des .quantity .pro-qty input {
@@ -5235,7 +5013,6 @@ only screen and (max-width: 767px) {
     padding: 0;
     text-align: center;
     background-color: transparent;
-    margin-left:50px;
 }
 
 .product-details-des .availability {
@@ -5247,7 +5024,6 @@ only screen and (max-width: 767px) {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left:50px;
 }
 
 .product-details-des .availability h5 {
@@ -5258,14 +5034,12 @@ only screen and (max-width: 767px) {
     margin-bottom: 0;
     margin-right: 10px;
     text-transform: capitalize;
-    margin-left:20px;
 }
 
 .product-details-des .availability span {
     color: #22dd77;
     font-size: 14px;
     padding-left: 3px;
-    margin-left:0px;
 }
 
 .product-details-des .useful-links {
@@ -5274,7 +5048,6 @@ only screen and (max-width: 767px) {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    margin-left:50px;
 }
 
 .product-details-des .useful-links a {
@@ -5283,18 +5056,15 @@ only screen and (max-width: 767px) {
     padding: 8px 15px;
     background-color: #a5a5a5;
     text-transform: capitalize;
-    margin-left:20px;
 }
 
 .product-details-des .useful-links a:hover {
     background-color: #d8373e;
-    margin-left:50px;
 }
 
 .product-details-des .useful-links a i {
     font-size: 14px;
     padding-right: 5px;
-    margin-left:50px;
 }
 
 .product-details-des .tag-line {
@@ -5306,7 +5076,6 @@ only screen and (max-width: 767px) {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left:50px;
 }
 
 .product-details-des .tag-line h5 {
@@ -5316,32 +5085,27 @@ only screen and (max-width: 767px) {
     line-height: 25px;
     margin-bottom: 0;
     margin-right: 20px;
-    margin-left:50px;
 }
 
 @media only screen and (max-width: 479px) {
     .product-details-des .tag-line h5 {
         margin-right: 10px;
-    margin-left:50px;
-}
+    }
 }
 
 .product-details-des .tag-line a {
     color: #404040;
     font-size: 14px;
     margin-right: 10px;
-    margin-left:50px;
 }
 
 .product-details-des .tag-line a:hover {
     color: #d8373e;
-    margin-left:50px;
 }
 
 .product-details-des .share-icon {
     padding-top: 16px;
     border-top: 1px solid #e5e5e5;
-    margin-left:50px;
 }
 
 .product-details-des .share-icon a {
@@ -5356,32 +5120,26 @@ only screen and (max-width: 767px) {
     -moz-border-radius: 3px;
     border-radius: 3px;
     text-transform: capitalize;
-    margin-left:50px;
 }
 
 .product-details-des .share-icon a i {
     padding-right: 5px;
-    margin-left:50px;
 }
 
 .product-details-des .share-icon a.facebook {
     background-color: #3B5999;
-    margin-left:50px;
 }
 
 .product-details-des .share-icon a.twitter {
     background-color: #1DA1F2;
-    margin-left:50px;
 }
 
 .product-details-des .share-icon a.pinterest {
     background-color: #CB2028;
-    margin-left:50px;
 }
 
 .product-details-des .share-icon a.google {
     background-color: #fe6d4c;
-    margin-left:50px;
 }
 
 .product-details-des .color-option {
@@ -5393,7 +5151,6 @@ only screen and (max-width: 767px) {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left:50px;
 }
 
 .product-details-des .color-option h5 {
@@ -5404,7 +5161,6 @@ only screen and (max-width: 767px) {
     margin-bottom: 5px;
     margin-right: 10px;
     text-transform: capitalize;
-    margin-left:50px;
 }
 
 .product-details-des .color-option li {
@@ -5412,14 +5168,12 @@ only screen and (max-width: 767px) {
     margin-right: 5px;
     padding: 2px;
     border: 1px solid #ccc;
-    margin-left:50px;
 }
 
 .product-details-des .color-option li a {
     height: 30px;
     width: 30px;
     display: block;
-    margin-left:50px;
 }
 
 .product-details-des .pro-size {
@@ -5429,7 +5183,6 @@ only screen and (max-width: 767px) {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left:50px;
 }
 
 .product-details-des .pro-size h5 {
@@ -5440,41 +5193,34 @@ only screen and (max-width: 767px) {
     margin-bottom: 0;
     margin-right: 10px;
     text-transform: capitalize;
-    margin-left:50px;
 }
 
 .product-details-des .pro-size .nice-select {
     width: 100px;
     height: 40px;
-    margin-left:50px;
 }
 
 .product-details-des .group-product-table {
     display: block;
-    margin-left:50px;
 }
 
 .product-details-des .group-product-table.table-bordered {
     border: none;
-    margin-left:50px;
 }
 
 .product-details-des .group-product-table td {
     width: 33.33%;
     padding: 8px;
     vertical-align: middle;
-    margin-left:50px;
 }
 
 .product-details-des .group-product-table td a {
     color: #404040;
     text-transform: capitalize;
-    margin-left:50px;
 }
 
 .product-details-des .group-product-table td a:hover {
     color: #d8373e;
-    margin-left:50px;
 }
 
 .product-details-des .group-product-table td .pro-qty {
@@ -5483,7 +5229,6 @@ only screen and (max-width: 767px) {
     border: 1px solid #ddd;
     padding: 0 15px;
     float: left;
-    margin-left:50px;
 }
 
 .product-details-des .group-product-table td .pro-qty .qtybtn {
@@ -5496,7 +5241,6 @@ only screen and (max-width: 767px) {
     font-size: 15px;
     font-weight: 700;
     color: #404040;
-    margin-left:50px;
 }
 
 .product-details-des .group-product-table td .pro-qty input {
@@ -5508,13 +5252,10 @@ only screen and (max-width: 767px) {
     padding: 0;
     text-align: center;
     background-color: transparent;
-    margin-left:50px;
 }
 
 /*----- product details content end ----*/
 /*----- reviews area start -----*/
-
-
 .product-review-info .nav.review-tab li a {
     color: #ffffff;
     display: block;
@@ -5625,7 +5366,6 @@ only screen and (max-width: 575px) {
 }
 
 .product-review-info .tab-content .review-description .tab-des h3 {
-    color: #d8373e;
     font-size: 20px;
     font-weight: 22px;
     font-weight: 700;
@@ -5753,7 +5493,7 @@ only screen and (max-width: 575px) {
     }
 }
 
-/* Checkout Giriş Yap Coupon Accordion Start */
+/* Checkout Login Coupon Accordion Start */
 .checkoutaccordion h3 {
     background-color: #f7f7f7;
     border-top: 3px solid #d8373e;
@@ -5794,13 +5534,6 @@ only screen and (max-width: 575px) {
     -o-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
 }
-.product-details-inner {
-    display: flex;
-    justify-content: space-between; /* İçerikleri arasında boşluk bırakarak yayma */
-    align-items: center; /* İçerikleri dikey eksende ortala */
-}
-
-
 
 .checkoutaccordion .card .card-body {
     border: 1px solid #ccc;
@@ -6479,8 +6212,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 /*------ end Compare Page Wrapper -----*/
-/*------ Start Giriş Yap & Kayıt Ol Page ------*/
-.Giriş Yap-reg-form-wrap {
+/*------ Start Login & Register Page ------*/
+.login-reg-form-wrap {
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
@@ -6489,12 +6222,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 @media only screen and (max-width: 575px) {
-    .Giriş Yap-reg-form-wrap {
+    .login-reg-form-wrap {
         padding: 23px 15px 30px;
     }
 }
 
-.Giriş Yap-reg-form-wrap h2 {
+.login-reg-form-wrap h2 {
     font-weight: 500;
     font-size: 26px;
     line-height: 26px;
@@ -6505,7 +6238,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     margin-bottom: 32px;
 }
 
-.Giriş Yap-reg-form-wrap h3 {
+.login-reg-form-wrap h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 18px;
@@ -6516,16 +6249,16 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     margin-bottom: 30px;
 }
 
-.Giriş Yap-reg-form-wrap form .create-account {
+.login-reg-form-wrap form .create-account {
     margin-top: 25px;
 }
 
-.Giriş Yap-reg-form-wrap .Giriş Yap-reg-form-meta a {
+.login-reg-form-wrap .login-reg-form-meta a {
     color: #d8373e;
 }
 
-/*------ end Giriş Yap & Kayıt Ol Page ------*/
-/*-------- Start Hesabım Page Wrapper --------*/
+/*------ end Login & Register Page ------*/
+/*-------- Start My Account Page Wrapper --------*/
 .myaccount-tab-menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -6650,7 +6383,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     padding: 20px;
 }
 
-/*-------- Start Hesabım Page Wrapper --------*/
+/*-------- Start My Account Page Wrapper --------*/
 /*------- Start About Page Wrapper --------*/
 .title-box {
     position: relative;
@@ -6977,21 +6710,27 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 /*------ contact info area end -------*/
-.map-container {
-    position: relative;
-    overflow: hidden;
-    padding-bottom: 56.25%; /* Or you can use a different aspect ratio, like 75% for a 4:3 aspect ratio. */
+#map_content {
+    height: 500px;
 }
 
-.map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #map_content {
+        height: 400px;
+    }
 }
 
+@media only screen and (max-width: 767px) {
+    #map_content {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    #map_content {
+        height: 200px;
+    }
+}
 
 /*----- breadcrumb style css start -----*/
 .breadcrumb-wrap {
@@ -7098,7 +6837,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     text-transform: capitalize;
 }
 
-.blog-sidebar .arama-butonu {
+.blog-sidebar .search-btn {
     width: 50px;
     height: 50px;
     margin-left: -4px;
@@ -7108,13 +6847,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     border: 1px solid #ccc;
 }
 
-.blog-sidebar .arama-butonu i {
+.blog-sidebar .search-btn i {
     font-size: 20px;
     line-height: 50px;
     color: #444444;
 }
 
-.blog-sidebar .arama-butonu:hover i {
+.blog-sidebar .search-btn:hover i {
     color: #d8373e;
 }
 
@@ -7454,13 +7193,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     padding: 0px 15px;
     line-height: 34px;
     cursor: pointer;
-    background: #1258af;
+    background: #d8373e;
     text-transform: uppercase;
 }
 
 .footer-top-wrapper .newsletter__wrap .newsletter__box form button:hover {
     background-color: #a32025;
-    color:#ffffff;
 }
 
 @media only screen and (max-width: 479px) {
@@ -7527,7 +7265,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 /* ------- footer top end ------- */
 /* -------- footer widget start -------- */
 .footer-widget .widget-title h4 {
-    color: #000000;
+    color: #444444;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
@@ -7563,7 +7301,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .footer-widget .widget-body ul li a {
-    color: #1258af;
+    color: #444444;
     font-size: 13px;
     text-transform: capitalize;
     position: relative;

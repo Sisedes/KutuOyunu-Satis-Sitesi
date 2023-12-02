@@ -49,7 +49,6 @@
 .product-details-des .customer-rev a:hover,
 .product-details-des .tag-line a:hover,
 .product-details-des .group-product-table td a:hover,
-.product-review-info .tab-content .review-description .tab-des h3,
 .checkoutaccordion h3 span,
 .forget-pwd,
 .custom-checkbox label a:hover,
@@ -60,14 +59,14 @@
 .compare-table .table tbody tr td.product-image-title .category,
 .compare-table .table tbody tr td.product-image-title .title:hover,
 .compare-table .table tbody tr td.pro-ratting i,
-.Giriş Yap-reg-form-wrap .Giriş Yap-reg-form-meta a,
+.login-reg-form-wrap .login-reg-form-meta a,
 .myaccount-content .welcome a:hover,
 .myaccount-content .welcome strong,
 .team-member .team-content h6,
 .single-choose-item:hover i,
 .breadcrumb-wrap nav .breadcrumb .breadcrumb-item a:hover,
 .breadcrumb-wrap nav .breadcrumb .breadcrumb-item.active,
-.blog-sidebar .arama-butonu:hover i,
+.blog-sidebar .search-btn:hover i,
 .blog-sidebar .blog-archive li a:hover,
 .blog-sidebar .recent-post .recent-post-des span a:hover,
 .footer-widget .widget-body ul.location li i,
@@ -88,7 +87,7 @@
 .scroll-top,
 .tooltip>.tooltip-inner,
 .header-middle-right .header-middle-shipping .single-block-shipping:hover .shipping-icon,
-.header-middle-right .header-middle-block .header-aramakutusu button.arama-butonu:hover,
+.header-middle-right .header-middle-block .header-middle-searchbox button.search-btn:hover,
 .header-middle-right .header-middle-block .header-mini-cart:hover,
 .header-middle-right .header-middle-block .header-mini-cart .mini-cart-btn span.cart-notification,
 .header-middle-right .header-middle-block .header-mini-cart ul.cart-list li.checkout-btn a:hover,
@@ -140,7 +139,7 @@
 .category-append button:hover,
 .home-btn:hover,
 .header-middle-right .header-middle-shipping .single-block-shipping:hover .shipping-icon,
-.header-middle-right .header-middle-block .header-aramakutusu button.arama-butonu:hover,
+.header-middle-right .header-middle-block .header-middle-searchbox button.search-btn:hover,
 .product-tag a:hover,
 .nice-select.open,
 .blog-item .blog-sharing a:hover,
@@ -166,7 +165,7 @@
 .pro-nav .slick-slide.slick-current img,
 .layout-changer li button,
 .comment-section ul li .comment-body .reply-btn a {
-    border-color: #d8373e !important;
+    border-color: #1258af !important;
 }
 
 .bdr-bottom1 {
@@ -175,12 +174,12 @@
 
 .tooltip.bs-tooltip-top .arrow:before,
 .product-list-item .product-list-content .pricebox {
-    border-top-color: #d8373e !important;
+    border-top-color: #1258af !important;
 }
 
 .tooltip.bs-tooltip-left .arrow:before,
 .blog-item .blog-content .blog-details blockquote {
-    border-left-color: #d8373e !important;
+    border-left-color: #1258af !important;
 }
 
 /*----- border color css end ----*/

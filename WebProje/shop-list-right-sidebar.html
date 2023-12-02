@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html class="no-js" lang="tr">
+<html class="no-js" lang="en">
 
 
 
@@ -11,7 +11,7 @@
     <meta name="description" content="meta description">
 
     <!-- SiteBaşlığı -->
-    <title>OyunKutusu-Kutudan Çıkan Oyun</title>
+    <title>OyunKutusu-KutudanÇıkanOyun</title>
     <!-- SekmeIconu -->
     <link rel="sekme iconu" href="assets/img/sekmeIcon.ico" type="image/x-icon" />
     <!-- Bootstrap CSS -->
@@ -25,13 +25,14 @@
     <!-- Main Style CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/skin-default.css" rel="stylesheet" id="galio-skin">
+    <script src="assets/js/popup.js"></script>
+    <link rel="stylesheet" href="popup.css">
+    
 </head>
 
 <body>
 
-    <!-- color switcher start -->
     
-    <!-- color switcher end -->
 
     <div class="wrapper box-layout">
 
@@ -59,25 +60,25 @@
                                 <nav>
                                     <ul>
                                         <li>
-                                            <a href="#">İstek Listesi</a>
+                                            <a href="cart.html">İstek Listesi</a>
                                         </li>
                                         <li>
                                             <a href="#">Sepetim</a>
                                         </li>
                                         <li>
                                             <div class="dropdown header-top-dropdown">
-                                                <a class="dropdown-toggle" id="myaccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <a class="dropdown-toggle" id="myaccount" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
                                                     Hesabım
                                                     <i class="fa fa-angle-down"></i>
                                                 </a>
-                                                <div class="dropdown-menu" aria-labelledby="myaccount">
+                                                <div class="dropdown-menu" aria-labelledby="myaccount" style="background-color: #1258af;">
                                                     <a class="dropdown-item" href="my-account.html">Hesabım</a>
                                                     <a class="dropdown-item" href="login-register.html"> Giriş Yap</a>
                                                     <a class="dropdown-item" href="login-register.html">Kayıt Ol</a>
                                                 </div>
                                             </div>
                                         </li>
-                                        
                                     </ul>
                                 </nav>
                             </div>
@@ -94,7 +95,7 @@
                         <div class="col-lg-3">
                             <div class="brand-logo">
                                 <a href="index.html">
-                                    <img src="assets/img/logo/logo.png" alt="Firma Logosu">
+                                    <img src="assets/img/logo/logo.png" alt="brand logo">
                                 </a>
                             </div>
                         </div> <!-- end logo area -->
@@ -102,9 +103,7 @@
                             <div class="header-middle-right">
                                 <div class="header-middle-shipping mb-20">
                                     
-                                    <div class="single-block-shipping">
-                                    </div> <!-- end single shipping -->
-
+                                    
                                     <div class="single-block-shipping">
                                         <div class="shipping-icon">
                                             <i class="fa fa-truck"></i>
@@ -114,34 +113,38 @@
                                             <span>250₺ ve üzeri ücretsiz kargo</span>
                                         </div>
                                     </div> <!-- end single shipping -->
-                                    
+                                    <div class="single-block-shipping">
+
+                                        <div class="shipping-content">
+                                            
+                                        </div>
+                                    </div> <!-- end single shipping -->
                                 </div>
                                 <div class="header-middle-block">
-                                    <div class="header-aramakutusu">
+                                    <div class="header-middle-searchbox">
                                         <input type="text" placeholder="Ara...">
-                                        <button class="arama-butonu"><i class="fa fa-search"></i></button> <!--AramaButonu-->
+                                        <button class="search-btn"><i class="fa fa-search"></i></button>
                                     </div>
                                     <div class="header-mini-cart">
                                         <div class="mini-cart-btn">
                                             <i class="fa fa-shopping-cart"></i>
-                                            <span class="cart-notification"></span>
+                                           
                                         </div>
-
                                         <div class="cart-total-price">
-                                            <span>total</span>
-                                            0₺            
+                                            <span>Toplam</span>
+                                            0₺
                                         </div>
-
                                         <ul class="cart-list">
-                                            <li class="mini-cart-price">
-                                                <span class="subtotal">Toplam: </span>
-                                                <span class="subtotal-price">0₺</span>
-                                            </li>
-                                            <li class="checkout-btn">
-                                                <a href="#">Alışverişi Tamamla</a>
-                                            </li>
+                                            <ul class="cart-list">
+                                                <li class="mini-cart-price">
+                                                    <span class="subtotal">Toplam: </span>
+                                                    <span class="subtotal-price">0₺</span>
+                                                </li>
+                                                <li class="checkout-btn">
+                                                    <a href="#">Alışverişi Tamamla</a>
+                                                </li>
+                                            </ul>
                                         </ul>
-
                                     </div>
                                 </div>
                             </div>
@@ -158,14 +161,12 @@
                         <div class="col-lg-12">
                             <div class="main-header-inner">
                                 <div class="category-toggle-wrap">
-  <a href="index.html">
                                     <div class="category-toggle">
-                                        Ana Sayfa
+                                        category
                                         <div class="cat-icon">
                                             <i class="fa fa-angle-down"></i>
                                         </div>
                                     </div>
-                                </a>
                                     <nav class="category-menu category-style-2">
                                         <ul>
                                             <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-desktop"></i> computer</a></li>
@@ -267,6 +268,14 @@
                                 <div class="main-menu">
                                     <nav id="mobile-menu">
                                         <ul>
+                                            <li class="active"><a href="shop-grid-left-sidebar.html"><i class="fa fa-home"></i>Mağaza <i class="fa fa-angle-down"></i></a>
+                                                <ul class="dropdown">
+                                                    <li><a href="kart.html">Kart Oyunları</a></li>
+                                                    <li><a href="kutu.html">Kutu Oyunları</a></li>
+                                                    <li><a href="cocuk.html">Çocuk</a></li>
+                                                    <li><a href="aksesuar.html">Aksesuar</a></li>
+                                                </ul>
+                                            </li>
                                             <li class="static"><a href="#">pages <i class="fa fa-angle-down"></i></a>
                                                 <ul class="megamenu dropdown">
                                                     <li class="mega-title"><a href="#">column 01</a>
@@ -279,7 +288,7 @@
                                                     </li>
                                                     <li class="mega-title"><a href="#">column 02</a>
                                                         <ul>
-                                                            <li><a href="tm-baslangic.html">product details</a></li>
+                                                            <li><a href="product-details.html">product details</a></li>
                                                             <li><a href="product-details-affiliate.html">product details
                                                                     affiliate</a></li>
                                                             <li><a href="product-details-variable.html">product details
@@ -298,9 +307,9 @@
                                                     <li class="mega-title"><a href="#">column 04</a>
                                                         <ul>
                                                             <li><a href="my-account.html">my-account</a></li>
-                                                            <li><a href="login-register.html">Giriş Yap-Kayıt Ol</a></li>
+                                                            <li><a href="login-register.html">login-register</a></li>
                                                             <li><a href="about-us.html">about us</a></li>
-                                                            <li><a href="contact-us.html">İletişim</a></li>
+                                                            <li><a href="contact-us.html">contact us</a></li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -326,7 +335,7 @@
                                                     </li>
                                                     <li><a href="#">products details <i class="fa fa-angle-right"></i></a>
                                                         <ul class="dropdown">
-                                                            <li><a href="tm-baslangic.html">product details</a></li>
+                                                            <li><a href="product-details.html">product details</a></li>
                                                             <li><a href="product-details-affiliate.html">product details
                                                                 affiliate</a></li>
                                                             <li><a href="product-details-variable.html">product details
@@ -337,14 +346,20 @@
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Hakkımızda <i class="fa fa-angle-down"></i></a>
+                                            <li><a href="#">Blog <i class="fa fa-angle-down"></i></a>
                                                 <ul class="dropdown">
-                                                    <li><a href="hakkımızda.html">Hakkımızda</a></li>
-                                                    <li><a href="misviz.html">Misyonumuz-Vizyonumuz</a></li>
-                                                    <li><a href="istatistikler.html">İstatistikler</a></li>
+                                                    <li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
+                                                    <li><a href="blog-left-sidebar-2-col.html">blog left sidebar 2 col</a></li>
+                                                    <li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+                                                    <li><a href="blog-full-2-column.html">blog full 2 column</a></li>
+                                                    <li><a href="blog-full-3-column.html">blog full 3 column</a></li>
+                                                    <li><a href="blog-details.html">blog details</a></li>
+                                                    <li><a href="blog-details-audio.html">blog details audio</a></li>
+                                                    <li><a href="blog-details-video.html">blog details video</a></li>
+                                                    <li><a href="blog-details-image.html">blog details image</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="contact-us.html">İletişim</a></li>
+                                            <li><a href="contact-us.html">Contact us</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -537,7 +552,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img1.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img2.jpg" class="img-sec" alt="">
                                             </a>
@@ -552,7 +567,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">vertual product 01</a></h4>
+                                            <h4><a href="product-details.html">vertual product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -572,7 +587,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img1.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img2.jpg" class="img-sec" alt="">
                                             </a>
@@ -581,7 +596,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">virtual product 02</a></h3>
+                                            <h3><a href="product-details.html">virtual product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -612,7 +627,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img3.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img4.jpg" class="img-sec" alt="">
                                             </a>
@@ -627,7 +642,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">simple product 01</a></h4>
+                                            <h4><a href="product-details.html">simple product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -647,7 +662,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img3.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img4.jpg" class="img-sec" alt="">
                                             </a>
@@ -656,7 +671,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">simple product 02</a></h3>
+                                            <h3><a href="product-details.html">simple product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -687,7 +702,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img5.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img6.jpg" class="img-sec" alt="">
                                             </a>
@@ -702,7 +717,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">group product 01</a></h4>
+                                            <h4><a href="product-details.html">group product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -722,7 +737,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img5.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img6.jpg" class="img-sec" alt="">
                                             </a>
@@ -731,7 +746,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">group product 02</a></h3>
+                                            <h3><a href="product-details.html">group product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -762,7 +777,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img7.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img8.jpg" class="img-sec" alt="">
                                             </a>
@@ -777,7 +792,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">external product</a></h4>
+                                            <h4><a href="product-details.html">external product</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -797,7 +812,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img7.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img8.jpg" class="img-sec" alt="">
                                             </a>
@@ -806,7 +821,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">external product</a></h3>
+                                            <h3><a href="product-details.html">external product</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -836,7 +851,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img9.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img10.jpg" class="img-sec" alt="">
                                             </a>
@@ -851,7 +866,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">simple product 01</a></h4>
+                                            <h4><a href="product-details.html">simple product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -871,7 +886,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img9.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img10.jpg" class="img-sec" alt="">
                                             </a>
@@ -880,7 +895,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">simple product 02</a></h3>
+                                            <h3><a href="product-details.html">simple product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -911,7 +926,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img11.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img12.jpg" class="img-sec" alt="">
                                             </a>
@@ -926,7 +941,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">smart product 01</a></h4>
+                                            <h4><a href="product-details.html">smart product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -946,7 +961,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img11.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img12.jpg" class="img-sec" alt="">
                                             </a>
@@ -955,7 +970,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">smart product 02</a></h3>
+                                            <h3><a href="product-details.html">smart product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -986,7 +1001,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img13.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img14.jpg" class="img-sec" alt="">
                                             </a>
@@ -1001,7 +1016,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">vertual product 01</a></h4>
+                                            <h4><a href="product-details.html">vertual product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -1021,7 +1036,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img13.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img14.jpg" class="img-sec" alt="">
                                             </a>
@@ -1030,7 +1045,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">virtual product 02</a></h3>
+                                            <h3><a href="product-details.html">virtual product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -1061,7 +1076,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img15.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img16.jpg" class="img-sec" alt="">
                                             </a>
@@ -1076,7 +1091,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">external product</a></h4>
+                                            <h4><a href="product-details.html">external product</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -1096,7 +1111,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img15.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img16.jpg" class="img-sec" alt="">
                                             </a>
@@ -1105,7 +1120,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">external product</a></h3>
+                                            <h3><a href="product-details.html">external product</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -1136,7 +1151,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img2.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img3.jpg" class="img-sec" alt="">
                                             </a>
@@ -1151,7 +1166,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">vertual product 01</a></h4>
+                                            <h4><a href="product-details.html">vertual product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -1171,7 +1186,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img2.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img3.jpg" class="img-sec" alt="">
                                             </a>
@@ -1180,7 +1195,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">virtual product 02</a></h3>
+                                            <h3><a href="product-details.html">virtual product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -1211,7 +1226,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img4.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img5.jpg" class="img-sec" alt="">
                                             </a>
@@ -1226,7 +1241,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">group product 01</a></h4>
+                                            <h4><a href="product-details.html">group product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -1246,7 +1261,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img4.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img5.jpg" class="img-sec" alt="">
                                             </a>
@@ -1255,7 +1270,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">group product 02</a></h3>
+                                            <h3><a href="product-details.html">group product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -1286,7 +1301,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img6.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img7.jpg" class="img-sec" alt="">
                                             </a>
@@ -1301,7 +1316,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">simple product 01</a></h4>
+                                            <h4><a href="product-details.html">simple product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -1321,7 +1336,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img8.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img9.jpg" class="img-sec" alt="">
                                             </a>
@@ -1330,7 +1345,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">simple product 02</a></h3>
+                                            <h3><a href="product-details.html">simple product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -1361,7 +1376,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img10.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img11.jpg" class="img-sec" alt="">
                                             </a>
@@ -1376,7 +1391,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">vertual product 01</a></h4>
+                                            <h4><a href="product-details.html">vertual product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$100.00</span>
                                                 <div class="ratings">
@@ -1396,7 +1411,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img10.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img11.jpg" class="img-sec" alt="">
                                             </a>
@@ -1405,7 +1420,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">virtual product 02</a></h3>
+                                            <h3><a href="product-details.html">virtual product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -1436,7 +1451,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img12.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img13.jpg" class="img-sec" alt="">
                                             </a>
@@ -1451,7 +1466,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">vertual product 01</a></h4>
+                                            <h4><a href="product-details.html">vertual product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -1471,7 +1486,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img12.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img13.jpg" class="img-sec" alt="">
                                             </a>
@@ -1480,7 +1495,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">virtual product 02</a></h3>
+                                            <h3><a href="product-details.html">virtual product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -1511,7 +1526,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img14.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img15.jpg" class="img-sec" alt="">
                                             </a>
@@ -1526,7 +1541,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">smart product 01</a></h4>
+                                            <h4><a href="product-details.html">smart product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$90.00</span>
                                                 <div class="ratings">
@@ -1546,7 +1561,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img14.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img15.jpg" class="img-sec" alt="">
                                             </a>
@@ -1555,7 +1570,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">virtual product 02</a></h3>
+                                            <h3><a href="product-details.html">virtual product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -1586,7 +1601,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img16.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img1.jpg" class="img-sec" alt="">
                                             </a>
@@ -1601,7 +1616,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">simple product 01</a></h4>
+                                            <h4><a href="product-details.html">simple product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -1621,7 +1636,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img16.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img1.jpg" class="img-sec" alt="">
                                             </a>
@@ -1630,7 +1645,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">simple product 02</a></h3>
+                                            <h3><a href="product-details.html">simple product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -1661,7 +1676,7 @@
                                     <!-- product single grid item start -->
                                     <div class="product-item fix mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img4.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img6.jpg" class="img-sec" alt="">
                                             </a>
@@ -1676,7 +1691,7 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <h4><a href="tm-baslangic.html">vertual product 01</a></h4>
+                                            <h4><a href="product-details.html">vertual product 01</a></h4>
                                             <div class="pricebox">
                                                 <span class="regular-price">$70.00</span>
                                                 <div class="ratings">
@@ -1696,7 +1711,7 @@
                                     <!-- product single list item start -->
                                     <div class="product-list-item mb-30">
                                         <div class="product-thumb">
-                                            <a href="tm-baslangic.html">
+                                            <a href="product-details.html">
                                                 <img src="assets/img/product/product-img8.jpg" class="img-pri" alt="">
                                                 <img src="assets/img/product/product-img8.jpg" class="img-sec" alt="">
                                             </a>
@@ -1705,7 +1720,7 @@
                                             </div>
                                         </div>
                                         <div class="product-list-content">
-                                            <h3><a href="tm-baslangic.html">virtual product 02</a></h3>
+                                            <h3><a href="product-details.html">virtual product 02</a></h3>
                                             <div class="ratings">
                                                 <span class="good"><i class="fa fa-star"></i></span>
                                                 <span class="good"><i class="fa fa-star"></i></span>
@@ -1760,12 +1775,54 @@
         </div>
         <!-- page wrapper end -->
 
-        
+        <!-- brand area start -->
+        <div class="brand-area pt-28 pb-30 pt-md-4 pt-sm-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title mb-30">
+                            <div class="title-icon">
+                                <i class="fa fa-crop"></i>
+                            </div>
+                            <h3>Popular Brand</h3>
+                        </div> <!-- section title end -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="brand-active slick-padding slick-arrow-style">
+                            <div class="brand-item text-center">
+                                <a href="#"><img src="assets/img/brand/br1.png" alt=""></a>
+                            </div>
+                            <div class="brand-item text-center">
+                                <a href="#"><img src="assets/img/brand/br2.png" alt=""></a>
+                            </div>
+                            <div class="brand-item text-center">
+                                <a href="#"><img src="assets/img/brand/br3.png" alt=""></a>
+                            </div>
+                            <div class="brand-item text-center">
+                                <a href="#"><img src="assets/img/brand/br4.png" alt=""></a>
+                            </div>
+                            <div class="brand-item text-center">
+                                <a href="#"><img src="assets/img/brand/br5.png" alt=""></a>
+                            </div>
+                            <div class="brand-item text-center">
+                                <a href="#"><img src="assets/img/brand/br6.png" alt=""></a>
+                            </div>
+                            <div class="brand-item text-center">
+                                <a href="#"><img src="assets/img/brand/br4.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- brand area end -->
 
-        <!-- FooterKısmı -->
+        <!-- footer area start -->
         <footer>
             <!-- footer top start -->
-            <div class="footer-top bg-black pt-14 pb-14">
+            <div class="footer-top bg-black pt-14 pb-14"style="background-color: #1258af;">
                 <div class="container">
                     <div class="footer-top-wrapper">
                         <div class="newsletter__wrap">
@@ -1774,14 +1831,14 @@
                                     <i class="fa fa-envelope"></i>
                                 </div>
                                 <div class="newsletter__content">
-                                    <h3>Kampanyalardan Haberdar Olmak İçin Abone Ol</h3>
-                                    
+                                    <h3>sign up for newsletter</h3>
+                                    <p>Duis autem vel eum iriureDuis autem vel eum</p>
                                 </div>
                             </div>
                             <div class="newsletter__box">
-                                <form id="mc-form"style="height: 40px;">
-                                    <input type="email" id="mc-email" autocomplete="off" placeholder="E-posta">
-                                    <button id="mc-submit">Abone Ol!</button>
+                                <form id="mc-form">
+                                    <input type="email" id="mc-email" autocomplete="off" placeholder="Email">
+                                    <button id="mc-submit">subscribe!</button>
                                 </form>
                             </div>
                             <!-- mailchimp-alerts Start -->
@@ -1796,7 +1853,7 @@
                             <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
                             <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
                             <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
-                            
+                            <a href="#" data-toggle="tooltip" data-placement="top" title="Google-plus"><i class="fa fa-google-plus"></i></a>
                             <a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="fa fa-youtube"></i></a>
                         </div>
                     </div>
@@ -1815,26 +1872,26 @@
                                 </div>
                                 <div class="widget-body">
                                     <ul class="location">
-                                        <li><i class="fa fa-envelope"></i>destek@oyunkutusu.com</li>
-                                        <li><i class="fa fa-phone"></i>0212 123 456</li>
-                                        <li><i class="fa fa-map-marker"></i>Adres: Oyun Kutusu Oyuncak, Orhanlı, Balaban Sok. No:13, PAT Lojistik, 34956 Tuzla/İstanbul</li>
+                                        <li><i class="fa fa-envelope"></i>support@galio.com</li>
+                                        <li><i class="fa fa-phone"></i>(800) 0123 456 789</li>
+                                        <li><i class="fa fa-map-marker"></i>Address:  1234 - Bandit Tringi Aliquam Vitae. New York</li>
                                     </ul>
-                                    
+                                    <a class="map-btn" href="contact-us.html">open in google map</a>
                                 </div>
                             </div> <!-- single widget end -->
                         </div> <!-- single widget column end -->
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-widget mb-sm-26">
                                 <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>Hesabım</h4>
+                                    <h4>my account</h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">Hesabım</a></li>
-                                        <li><a href="#">Sepetim</a></li>
+                                        <li><a href="#">my account</a></li>
+                                        <li><a href="#">my cart</a></li>
                                         <li><a href="#">checkout</a></li>
-                                        <li><a href="#">İstek Listesi</a></li>
-                                        <li><a href="#">Giriş Yap</a></li>
+                                        <li><a href="#">my wishlist</a></li>
+                                        <li><a href="#">login</a></li>
                                     </ul>
                                 </div>
                             </div> <!-- single widget end -->
@@ -1935,7 +1992,7 @@
                             </div>
                             <div class="col-lg-7">
                                 <div class="product-details-des mt-md-34 mt-sm-34">
-                                    <h3><a href="tm-baslangic.html">external product 12</a></h3>
+                                    <h3><a href="product-details.html">external product 12</a></h3>
                                     <div class="ratings">
                                         <span class="good"><i class="fa fa-star"></i></span>
                                         <span class="good"><i class="fa fa-star"></i></span>

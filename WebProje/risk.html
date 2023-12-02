@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="tr">
+<html class="no-js" lang="en">
 
 
 <head>
@@ -9,7 +9,7 @@
     <meta name="description" content="meta description">
 
     <!-- SiteBaşlığı -->
-    <title>OyunKutusu-Kutudan Çıkan Oyun</title>
+    <title>OyunKutusu-KutudanÇıkanOyun</title>
     <!-- SekmeIconu -->
     <link rel="sekme iconu" href="assets/img/sekmeIcon.ico" type="image/x-icon" />
     <!-- Bootstrap CSS -->
@@ -23,17 +23,19 @@
     <!-- Main Style CSS -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/skin-default.css" rel="stylesheet" id="galio-skin">
+    <script src="assets/js/popup.js"></script>
+    <link rel="stylesheet" href="popup.css">
+    
 </head>
 
 <body>
 
-    <!-- color switcher start -->
     
-    <!-- color switcher end -->
 
     <div class="wrapper box-layout">
         <!-- header area start -->
         <header>
+
             <!-- header top start -->
             <div class="header-top-area bg-gray text-center text-md-left">
                 <div class="container">
@@ -55,25 +57,25 @@
                                 <nav>
                                     <ul>
                                         <li>
-                                            <a href="#">İstek Listesi</a>
+                                            <a href="cart.html">İstek Listesi</a>
                                         </li>
                                         <li>
                                             <a href="#">Sepetim</a>
                                         </li>
                                         <li>
                                             <div class="dropdown header-top-dropdown">
-                                                <a class="dropdown-toggle" id="myaccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <a class="dropdown-toggle" id="myaccount" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
                                                     Hesabım
                                                     <i class="fa fa-angle-down"></i>
                                                 </a>
-                                                <div class="dropdown-menu" aria-labelledby="myaccount">
+                                                <div class="dropdown-menu" aria-labelledby="myaccount" style="background-color: #1258af;">
                                                     <a class="dropdown-item" href="my-account.html">Hesabım</a>
                                                     <a class="dropdown-item" href="login-register.html"> Giriş Yap</a>
                                                     <a class="dropdown-item" href="login-register.html">Kayıt Ol</a>
                                                 </div>
                                             </div>
                                         </li>
-                                        
                                     </ul>
                                 </nav>
                             </div>
@@ -90,7 +92,7 @@
                         <div class="col-lg-3">
                             <div class="brand-logo">
                                 <a href="index.html">
-                                    <img src="assets/img/logo/logo.png" alt="Firma Logosu">
+                                    <img src="assets/img/logo/logo.png" alt="brand logo">
                                 </a>
                             </div>
                         </div> <!-- end logo area -->
@@ -98,9 +100,7 @@
                             <div class="header-middle-right">
                                 <div class="header-middle-shipping mb-20">
                                     
-                                    <div class="single-block-shipping">
-                                    </div> <!-- end single shipping -->
-
+                                    
                                     <div class="single-block-shipping">
                                         <div class="shipping-icon">
                                             <i class="fa fa-truck"></i>
@@ -110,34 +110,38 @@
                                             <span>250₺ ve üzeri ücretsiz kargo</span>
                                         </div>
                                     </div> <!-- end single shipping -->
-                                    
+                                    <div class="single-block-shipping">
+
+                                        <div class="shipping-content">
+                                            
+                                        </div>
+                                    </div> <!-- end single shipping -->
                                 </div>
                                 <div class="header-middle-block">
-                                    <div class="header-aramakutusu">
+                                    <div class="header-middle-searchbox">
                                         <input type="text" placeholder="Ara...">
-                                        <button class="arama-butonu"><i class="fa fa-search"></i></button> <!--AramaButonu-->
+                                        <button class="search-btn"><i class="fa fa-search"></i></button>
                                     </div>
                                     <div class="header-mini-cart">
                                         <div class="mini-cart-btn">
                                             <i class="fa fa-shopping-cart"></i>
-                                            <span class="cart-notification"></span>
+                                           
                                         </div>
-
                                         <div class="cart-total-price">
-                                            <span>total</span>
-                                            0₺            
+                                            <span>Toplam</span>
+                                            0₺
                                         </div>
-
                                         <ul class="cart-list">
-                                            <li class="mini-cart-price">
-                                                <span class="subtotal">Toplam: </span>
-                                                <span class="subtotal-price">0₺</span>
-                                            </li>
-                                            <li class="checkout-btn">
-                                                <a href="#">Alışverişi Tamamla</a>
-                                            </li>
+                                            <ul class="cart-list">
+                                                <li class="mini-cart-price">
+                                                    <span class="subtotal">Toplam: </span>
+                                                    <span class="subtotal-price">0₺</span>
+                                                </li>
+                                                <li class="checkout-btn">
+                                                    <a href="#">Alışverişi Tamamla</a>
+                                                </li>
+                                            </ul>
                                         </ul>
-
                                     </div>
                                 </div>
                             </div>
@@ -154,184 +158,41 @@
                         <div class="col-lg-12">
                             <div class="main-header-inner">
                                 <div class="category-toggle-wrap">
-  <a href="index.html">
-                                    <div class="category-toggle">
-                                        Ana Sayfa
-                                        <div class="cat-icon">
-                                            <i class="fa fa-angle-down"></i>
+                                    <a href="index.html">
+                                        <div class="category-toggle">
+                                            Ana Sayfa
+                                            <div class="cat-icon" style=" background-color: #1258af;" >
+                                                <i class="fa fa-angle-down" style="background-color: #1258af;"></i>
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
-                                    <nav class="category-menu category-style-2">
-                                        <ul>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-desktop"></i> computer</a></li>
-                                            <li class="menu-item-has-children"><a href="shop-grid-left-sidebar.html"><i class="fa fa-camera"></i> camera</a>   
-                                                <!-- Mega Category Menu Start -->
-                                                <ul class="category-mega-menu">
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">Smartphone</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Samsome</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">GL Stylus</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Uawei</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Cherry Berry</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">headphone</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Desktop Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Mobile Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Wireless Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">LED Headphone</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">accessories</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Power Bank</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Data Cable</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Power Cable</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Battery</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">headphone</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Desktop Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Mobile Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Wireless Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">LED Headphone</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul><!-- Mega Category Menu End --> 
-                                            </li>
-                                            <li class="menu-item-has-children"><a href="shop-grid-left-sidebar.html"><i class="fa fa-book"></i> smart phones</a> 
-                                                <!-- Mega Category Menu Start -->
-                                                <ul class="category-mega-menu">
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">Smartphone</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Samsome</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">GL Stylus</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Uawei</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Cherry Berry</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">uPhone</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">headphone</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Desktop Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Mobile Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Wireless Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">LED Headphone</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Over-ear</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">accessories</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Power Bank</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Data Cable</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Power Cable</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Battery</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">OTG Cable</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop-grid-left-sidebar.html">accessories</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">Power Bank</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Data Cable</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Power Cable</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">Battery</a></li>
-                                                            <li><a href="shop-grid-left-sidebar.html">OTG Cable</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul><!-- Mega Category Menu End -->
-                                            </li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-clock-o"></i> watch</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-television"></i> electronic</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-tablet"></i> tablet</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-book"></i> books</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-microchip"></i> microchip</a></li>
-                                            <li><a href="shop-grid-left-sidebar.html"><i class="fa fa-bullhorn"></i> bullhorn</a></li>
-                                        </ul>
-                                    </nav>
+                                    </a>
+                                    
+                                  
                                 </div>
                                 <div class="main-menu">
                                     <nav id="mobile-menu">
                                         <ul>
-                                            <li class="static"><a href="#">pages <i class="fa fa-angle-down"></i></a>
-                                                <ul class="megamenu dropdown">
-                                                    <li class="mega-title"><a href="#">column 01</a>
-                                                        <ul>
-                                                            <li><a href="shop-grid-left-sidebar.html">shop grid left sidebar</a></li>
-                                                            <li><a href="shop-grid-right-sidebar.html">shop grid right sidebar</a></li>
-                                                            <li><a href="shop-grid-full-3-col.html">shop grid full 3 column</a></li>
-                                                            <li><a href="shop-grid-full-4-col.html">shop grid full 4 column</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="mega-title"><a href="#">column 02</a>
-                                                        <ul>
-                                                            <li><a href="tm-baslangic.html">product details</a></li>
-                                                            <li><a href="product-details-affiliate.html">product details
-                                                                    affiliate</a></li>
-                                                            <li><a href="product-details-variable.html">product details
-                                                                    variable</a></li>
-                                                            <li><a href="product-details-group.html">product details group</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="mega-title"><a href="#">column 03</a>
-                                                        <ul>
-                                                            <li><a href="cart.html">cart</a></li>
-                                                            <li><a href="checkout.html">checkout</a></li>
-                                                            <li><a href="compare.html">compare</a></li>
-                                                            <li><a href="wishlist.html">wishlist</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="mega-title"><a href="#">column 04</a>
-                                                        <ul>
-                                                            <li><a href="my-account.html">my-account</a></li>
-                                                            <li><a href="login-register.html">Giriş Yap-Kayıt Ol</a></li>
-                                                            <li><a href="about-us.html">about us</a></li>
-                                                            <li><a href="contact-us.html">İletişim</a></li>
-                                                        </ul>
-                                                    </li>
+                                            <li class="active"><a href="shop-grid-left-sidebar.html"><i class="fa fa-home"></i>Mağaza <i class="fa fa-angle-down"></i></a>
+                                                <ul class="dropdown">
+                                                    <li><a href="kart.html">Kart Oyunları</a></li>
+                                                    <li><a href="kutu.html">Kutu Oyunları</a></li>
+                                                    <li><a href="cocuk.html">Çocuk</a></li>
+                                                    <li><a href="aksesuar.html">Aksesuar</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">shop <i class="fa fa-angle-down"></i></a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">shop grid layout <i class="fa fa-angle-right"></i></a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="shop-grid-left-sidebar.html">shop grid left sidebar</a></li>
-                                                            <li><a href="shop-grid-left-sidebar-3-col.html">left sidebar 3 col</a></li>
-                                                            <li><a href="shop-grid-right-sidebar.html">shop grid right sidebar</a></li>
-                                                            <li><a href="shop-grid-right-sidebar-3-col.html">grid right sidebar 3 col</a></li>
-                                                            <li><a href="shop-grid-full-3-col.html">shop grid full 3 column</a></li>
-                                                            <li><a href="shop-grid-full-4-col.html">shop grid full 4 column</a></li>
-                                                        </ul>
+                                            <li class="static"><a href="#">Yaş Grupları <i class="fa fa-angle-down"></i></a>
+                                                <ul class="megamenu dropdown">
+                                                    <li class="mega-title"><a href="0-18.html">Genel Yaş Kitlesi</a>
+                                                        
                                                     </li>
-                                                    <li><a href="#">shop list layout <i class="fa fa-angle-right"></i></a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="shop-list-left-sidebar.html">shop list left sidebar</a></li>
-                                                            <li><a href="shop-list-right-sidebar.html">shop list right sidebar</a></li>
-                                                            <li><a href="shop-list-full.html">shop list full width</a></li>
-                                                        </ul>
+                                                    <li class="mega-title"><a href="18+.html">18+</a>
+                                                        
                                                     </li>
-                                                    <li><a href="#">products details <i class="fa fa-angle-right"></i></a>
-                                                        <ul class="dropdown">
-                                                            <li><a href="tm-baslangic.html">product details</a></li>
-                                                            <li><a href="product-details-affiliate.html">product details
-                                                                affiliate</a></li>
-                                                            <li><a href="product-details-variable.html">product details
-                                                                variable</a></li>
-                                                            <li><a href="product-details-group.html">product details group</a></li>
-                                                            <li><a href="product-details-box.html">product details box slider</a></li>
-                                                        </ul>
-                                                    </li>
+                                                    
                                                 </ul>
+                                            </li>
+                                            <li><a href="blog-details.html">Blog </a>
+                                                
                                             </li>
                                             <li><a href="#">Hakkımızda <i class="fa fa-angle-down"></i></a>
                                                 <ul class="dropdown">
@@ -346,7 +207,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 d-block d-lg-none"><div class="mobile-menu"></div></div>
+                        <div class="col-12 d-block d-lg-none">
+                            <div class="mobile-menu"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -365,7 +228,7 @@
                                 <ul class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="index.html">Ana Sayfa</a></li>
                                     <li class="breadcrumb-item"><a href="shop-grid-left-sidebar.html">Mağaza</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Risk</li>
+                                    <li class="breadcrumb-item active" aria-current="page" style="color: #1258af;">Risk</li>
                                 </ul>
                             </nav>
                         </div>
@@ -378,40 +241,26 @@
         <!-- product details wrapper start -->
         <div class="product-details-wrapper">
             <div class="container">
-                
+                <div class="row">
                     <div class="col-lg-9">
                         <!-- product details inner end -->
-                        <div class="product-details-inner" style=" max-width:100% ;width: 1200px;">
-                            <div class="row" >
+                        <div class="product-details-inner">
+                            <div class="row">
                                 <div class="col-lg-6">
-                                    
-                                    <div class="product__images" style="width: 500px; height:600px;">
-                                        <img
-                                            src="assets/img/risk/risk-kutu-oyunu.jpg"
-                                            class="product__main-image"
-                                            id="main-image"
-                                            style="width: 400px; height:400px;"
-                                        />
-                                        <div class="product__slider-wrap">
-                                            <div class="product__slider">
-                                                <img
-                                                    src="assets/img/risk/risk-kutu-oyunu.jpg"
-                                                    class="product__image product__image--active"
-                                                />
-                                                <img
-                                                    src="assets/img/risk/risk-strateji-oyunu-min.jpg"
-                                                    class="product__image"
-                                                />
-                                            </div>
+                                    <div class="product-large-slider mb-20 slick-arrow-style_2">
+                                        <div class="pro-large-img img-zoom" id="img1">
+                                            <img src="assets/img/risk/risk-kutu-oyunu.jpg" alt="" />
                                         </div>
-                                    <script src="assets/js/shopImageSlider.js"></script>
 
+                                        
                                     </div>
-                                    
+                                    <div class="pro-nav slick-padding2 slick-arrow-style_2">
+                                        
+                        
+                                    </div>
                                 </div>
-                                <div class="col-lg-6" style="margin-left: 30px;border: 4px solid#f5f5f5; background-color: #f5f5f5;border-radius: 20px;">
-                                    <div class="product-details-des mt-md-34 mt-sm-34">
-                                        <br>
+                                <div class="col-lg-6">
+                                    <div class="product-details-des mt-md-34 mt-sm-34" style="background-color:#f5f5f5; border-radius:10px;">
                                         <h3><a href="risk.html">Risk</a></h3>
                                         <div class="ratings">
                                             <span class="good"><i class="fa fa-star"></i></span>
@@ -430,28 +279,31 @@
                                             <h5>Stok Durumu:</h5>
                                             <span>Stokta Var</span>
                                         </div>
-                                        <br>
                                         <div class="pricebox">
-                                            <span class="regular-price" style="font-size:60px ;">749.90₺</span>
+                                            <span class="regular-price">749.90₺</span>
                                         </div>
-                                        <p></p>
+                                        <p ><p>12 saat içerisinde sipariş verirseniz hemen kargoda!</p>
+                                        <h3>Kargo Seçenekleri</h3>
+                                        <br>
+                                        <li><a href="" style="color: black;">Teslimat <span>Tahmini <b>Pazartesi</b> günü kargoda</a> </li></span>
+                                        <li><a href=""style="color: black;">Süper Kutu Teslimat <span>Tahmini <b>5 saat içinde</b> kargoda</a></li></span>
+                                        <li><a href=""style="color: black;">Sabırsız Kutu Teslimat <span><b>Aynı gün içinde</b> kargoda</a></li></span></p>
                                         <div class="quantity-cart-box d-flex align-items-center">
                                             <div class="quantity">
                                                 <div class="pro-qty"><input type="text" value="1"></div>
                                             </div>
                                             <div class="action_link">
-                                                <a class="buy-btn" href="#">Sepete Ekle<i class="fa fa-shopping-cart"></i></a>
+                                                <a class="buy-btn" href="#" >Sepete Ekle<i class="fa fa-shopping-cart"></i></a>
                                             </div>
-                                            <br>
-                                        </div><p>12 saat içerisinde sipariş verirseniz hemen kargoda!</p></div>
-                                        <h3>Kargo Seçenekleri</h3>
-                                        <br>
-                                        <p><li>Standart Teslimat <span>Tahmini <b>Pazartesi</b> günü kargoda</li></span></p>
-                                        <p><li>Süper Kutu Teslimat <span>Tahmini <b>5 saat içinde</b> kargoda</li></span></p>
-                                        <p><li>Sabırsız Kutu Teslimat <span><b>Aynı gün içinde</b> kargoda</li></span></p>
                                         </div>
-                                        
-                                        
+                                        <div class="useful-links mt-20">
+                                            <a href="#"  title="Wishlist" style="background-color:crimson;"><i class="fa fa-heart-o" ></i>İstek Listesine Ekle</a>
+                                        </div>
+                                        <div class="share-icon mt-20">
+                                            <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                            <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                            <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -460,7 +312,7 @@
 
                         <!-- product details reviews start -->
                         <div class="product-details-reviews mt-34">
-                             <div class="row" style="width:100%; max-width: 1450px; margin-left: auto; margin-right: auto; border:solid 2px #f5f5f5 ; background-color: #f5f5f5;">
+                            <div class="row">
                                 <div class="col-lg-12">
                                     <div class="product-review-info">
                                         <ul class="nav review-tab">
@@ -474,10 +326,9 @@
                                                 <a data-toggle="tab" href="#tab_three">Ürün Değerlendirmeleri</a>
                                             </li>
                                         </ul>
-                                        <div class="tab-content reviews-tab" style="display: flexbox;">
+                                        <div class="tab-content reviews-tab">
                                             <div class="tab-pane fade show active" id="tab_one">
                                                 <div class="tab-one">
-                                                    
                                                     <h2 style="text-align: center; color:#1258af">Risk</h2>
                                                     <h5 style="text-align: center;">ÖDÜLLÜ STRATEJİ OYUNU TERRAFORMİNG MARS’IN EN SEVİLEN EKLENTİ PAKETİ.</h5><br>
                                                     <p>
@@ -524,7 +375,7 @@
                                             </div>
                                             <div class="tab-pane fade" id="tab_three">
                                                 <form action="#" class="review-form">
-                                                    <h5>TM-Başlangıç Değerlendirmeleri</h5>
+                                                    <h5>Pandemic Değerlendirmeleri</h5>
                                                     <div class="total-reviews">
                                                         
                                                         <div class="review-box">
@@ -560,7 +411,7 @@
                                                                 <div class="col-lg-3 offset-lg-9">
                                                                     <!-- Content of your right box goes here -->
                                                                     <h4></h4>
-                                                                    <p>.</p>
+                                                                    <p></p>
                                                                     <!-- Add more content as needed -->
                                                                 </div>
                                                             </div>
@@ -577,128 +428,210 @@
                         <!-- product details reviews end --> 
 
                         <!-- related products area start -->
-                        <br>
-                        <h3 style="color: darkmagenta;">İLGİLİ ÜRÜNLER</h3><hr color="blueviolet">
-                        <div class="en-alt-bilgi">
-                            <div class="kutu">
-                                <img src="assets/img/kayıp-diyarlar/kayıp-diyarlar-kutu-oyunu-300x300.jpg" alt="kayıp diyarlar">
-                                <a href="kayip-diyarlar.html" style="color:purple; "><h2>Kayıp Diyarlar</h2></a>
-                                <p>Kayıp Diyarların fantastik dünyasında yerinizi alın. En çok toprağa siz hükmedin!</p>
-
-                                <div class="ratings" style="color: #6c91bc;background-color:#6c91bc">
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                        <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                        <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                        <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <br>
-                                    
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star" style="background-color: #6c91bc;color: #6c91bc;"></i></span>
-                                    <div class="pro-alttaraf-view">
-                                        <span style="background-color: #6c91bc; color:#6c91bc;">(2 Yorum)</span>
+                        <div class="related-products-area mt-34">
+                            <div class="section-title mb-30">
+                                <div class="title-icon">
+                                    <i class="fa fa-desktop"></i>
+                                </div>
+                                <h3>İlgili Ürünler</h3>
+                            </div> <!-- section title end -->
+                            <!-- featured category start -->
+                            <div class="featured-carousel-active slick-padding slick-arrow-style">
+                                <!-- product single item start -->
+                                <div class="product-item fix">
+                                    <div class="product-thumb">
+                                        <a href="otokrat.html">
+                                            <img src="assets/img/otokrat/otokrat-kutu-oyunu-300x300.jpg" class="img-pri" alt="">
+                                            <img src="assets/img/otokrat/sddefault.jpg" class="img-sec" alt="">
+                                        </a>
+                                        <div class="product-label">
+                                            <span style="background-color: blueviolet;">Sıcak</span>
+                                        </div>
+                                        <div class="product-action-link">
+                                            <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i class="fa fa-search"></i></span> </a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="fa fa-refresh"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <h4><a href="otokrat.html">Otokrat</a></h4>
+                                        <div class="pricebox">
+                                            <span class="regular-price">419.90₺</span>
+                                            <div class="ratings">
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <div class="pro-review">
+                                                    <span>143 İnceleme</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <br>
-                                <p style="color:blueviolet;font-size:30px;"><b>749.90₺</b></p>
-                                <br>
-                                <button class="sepete-ekle-alt-bilgi">Sepete Ekle</button>
-                            </div>
-                            
-
-                            <div class="kutu">
-                                <img src="assets/img/pandemic/pandemic-kutu-oyunu-300x300.jpg" alt="pandemic">
-                                <a href="pandemic.html" style="color:purple;"><h2>Pandemic</h2></a>
-                                <p>Salgınlar ve epidemic hastalıkları körüklerken zamanımız gittikçe azalıyor. Dört virüsün aşısını zamanında bulabilecek misiniz?</p>
-                                <div class="ratings" style="color: #6c91bc;background-color:#6c91bc">
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <br>
-
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                        <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                        <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <br>
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star" style="background-color: #6c91bc;color: #6c91bc;"></i></span>
-                                    <div class="pro-alttaraf-view">
-                                        <span style="background-color: #6c91bc; color:#6c91bc;">(2 Yorum)</span>
+                                <!-- product single item end -->
+                                <!-- product single item start -->
+                                <div class="product-item fix">
+                                    <div class="product-thumb">
+                                        <a href="kayip-diyarlar.html">
+                                            <img src="assets/img/kayıp-diyarlar/kayıp-diyarlar-kutu-oyunu.jpg" class="img-pri" alt="">
+                                        </a>
+                                        <div class="product-label">
+                                            <span style="background-color: blueviolet;">Sıcak</span>
+                                        </div>
+                                        <div class="product-action-link">
+                                            <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i class="fa fa-search"></i></span> </a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="fa fa-refresh"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <h4><a href="kayip-diyarlar.html">Kayıp Diyarlar</a></h4>
+                                        <div class="pricebox">
+                                            <span class="regular-price">749.90₺</span>
+                                            <div class="ratings">
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <div class="pro-review">
+                                                    <span>15 İnceleme</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- product single item end -->
+                                <!-- product single item start -->
+                                <div class="product-item fix">
+                                    <div class="product-thumb">
+                                        <a href="risk.html">
+                                            <img src="assets/img/risk/risk-kutu-oyunu.jpg" class="img-pri" alt="">
+                                            
+                                        </a>
+                                        <div class="product-label">
+                                            <span style="background-color: blueviolet;">Sıcak</span>
+                                        </div>
+                                        <div class="product-action-link">
+                                            <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i class="fa fa-search"></i></span> </a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="fa fa-refresh"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <h4><a href="risk.html">Risk</a></h4>
+                                        <div class="pricebox">
+                                            <span class="regular-price">749.90₺</span>
+                                            <div class="ratings">
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <div class="pro-review">
+                                                    <span>155 İnceleme</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product single item end -->
+                                <!-- product single item start -->
                                 
-                                <p style="color:blueviolet;font-size:30px;"><b>1799.90₺</b></p>
-                                <br>
-                                <button class="sepete-ekle-alt-bilgi">Sepete Ekle</button>
-                            </div>
-                            
-
-                            <div class="kutu">
-                                <img src="assets/img/otokrat/otokrat-kutu-oyunu-300x300.jpg" alt="otokrat">
-                                <a href="otokrat.html" style="color:purple;"><h2>Otokrat</h2></a>
-                                <p>Şehrinizin kaderi sizin ellerinizde!</p>
-                                <div class="ratings" style="color: #6c91bc;background-color:#6c91bc">
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <br>
-
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                        <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                        <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <br>
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star" style="background-color: #6c91bc;color: #6c91bc;"></i></span>
-                                    <div class="pro-alttaraf-view">
-                                        <span style="background-color: #6c91bc; color:#6c91bc;">(5 Yorum)</span>
+                                <!-- product single item end -->
+                                <!-- product single item start -->
+                                <div class="product-item fix">
+                                    <div class="product-thumb">
+                                        <a href="bang.html">
+                                            <img src="assets/img/bang/bang-kutu-oyunu.jpg" class="img-pri" alt="">
+                                        </a>
+                                        <div class="product-label">
+                                            <span style="background-color: blueviolet;">Sıcak</span>
+                                        </div>
+                                        <div class="product-action-link">
+                                            <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i class="fa fa-search"></i></span> </a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="fa fa-refresh"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <h4><a href="bang.html">Bang</a></h4>
+                                        <div class="pricebox">
+                                            <span class="regular-price">459.90₺</span>
+                                            <div class="ratings">
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <div class="pro-review">
+                                                    <span>10 İnceleme</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <br><br>
-                                
-                                <p style="color:blueviolet;font-size:30px;"><b>419.90₺</b></p>
-                                <br>
-                                <button class="sepete-ekle-alt-bilgi">Sepete Ekle</button>
-                            </div>
-                            <div class="kutu">
-                                <img src="assets/img/bang/bang-kutu-oyunu-300x300.jpg" alt="bang">
-                                <a href="bang.html" style="color:purple;"><h2>BANG!</h2></a>
-                                <p>Dünyanın en çok satan vahşi temalı kovboy oyunu!</p>
-                                <div class="ratings" style="color: #6c91bc;background-color:#6c91bc">
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <br>
-
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                        <span class="good" style="background-color: #6c91bc#6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                        <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                        <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                        <span><i class="fa fa-star" style="background-color: #6c91bc;color: #6c91bc;"></i></span>
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <span class="good" style="background-color: #6c91bc;color: #6c91bc;"><i class="fa fa-star"></i></span>
-                                    <span><i class="fa fa-star" style="background-color: #6c91bc;color: #6c91bc;"></i></span>
-                                    <div class="pro-alttaraf-view">
-                                        <span style="background-color: #6c91bc; color:#6c91bc;">(2 Yorum)</span>
+                                <!-- product single item end -->
+                                <!-- product single item start -->
+                                <div class="product-item fix">
+                                    <div class="product-thumb">
+                                        <a href="tm-baslangic.html">
+                                            <img src="assets/img/tm-baslangic/PRELUDE_BOXFRONTTR-300x300.png" class="img-pri" alt="">
+                                        </a>
+                                        <div class="product-label">
+                                            <span style="background-color: blueviolet;">Sıcak</span>
+                                        </div>
+                                        <div class="product-action-link">
+                                            <a href="#" data-toggle="modal" data-target="#quick_view"> <span data-toggle="tooltip" data-placement="left" title="Quick view"><i class="fa fa-search"></i></span> </a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Wishlist"><i class="fa fa-heart-o"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Compare"><i class="fa fa-refresh"></i></a>
+                                            <a href="#" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="fa fa-shopping-cart"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-content">
+                                        <h4><a href="tm-baslangic.html">TM-Başlangıç</a></h4>
+                                        <div class="pricebox">
+                                            <span class="regular-price">849.90₺</span>
+                                            <div class="ratings">
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span class="good"><i class="fa fa-star"></i></span>
+                                                <span><i class="fa fa-star"></i></span>
+                                                <div class="pro-review">
+                                                    <span>144 İnceleme</span>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <br>
-                                
-                                <p style="color:blueviolet;font-size:30px;"><b>459.90₺</b></p>
-                                <br>
-                                <button class="sepete-ekle-alt-bilgi">Sepete Ekle</button>
+                                <!-- product single item end -->
                             </div>
+                            <!-- featured category end -->
+                        </div>
                         <!-- related products area end -->
                     </div>
 
+                    <!-- sidebar start -->
                     
-                
+                    <!-- sidebar end -->
+                </div>
             </div>
         </div>
         <!-- product details wrapper end -->
 
-        
-
-        <!-- FooterKısmı -->
         <br>
+
+        <!-- footer area start -->
         <footer>
             <!-- footer top start -->
-            <div class="footer-top bg-black pt-14 pb-14">
+            <div class="footer-top bg-black pt-14 pb-14"style="background-color: #1258af;">
                 <div class="container">
                     <div class="footer-top-wrapper">
                         <div class="newsletter__wrap">
@@ -708,21 +641,26 @@
                                 </div>
                                 <div class="newsletter__content">
                                     <h3>Kampanyalardan Haberdar Olmak İçin Abone Ol</h3>
-                                    
                                 </div>
                             </div>
                             <div class="newsletter__box">
-                                <form id="mc-form"style="height: 40px;">
-                                    <input type="email" id="mc-email" autocomplete="off" placeholder="E-posta">
-                                    <button id="mc-submit">Abone Ol!</button>
+                                <form id="mc-form">
+                                    <input type="email" id="mc-email" autocomplete="off" placeholder="Email">
+                                    <button id="mc-submit" style="background-color: white;">Abone Ol</button>
                                 </form>
                             </div>
+                            <!-- mailchimp-alerts Start -->
+                            <div class="mailchimp-alerts">
+                                <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                                <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                                <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                            </div>
+                            <!-- mailchimp-alerts end -->
                         </div>
                         <div class="social-icons">
                             <a href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
                             <a href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
                             <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
-                            
                             <a href="#" data-toggle="tooltip" data-placement="top" title="Youtube"><i class="fa fa-youtube"></i></a>
                         </div>
                     </div>
@@ -737,7 +675,7 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-widget mb-sm-30">
                                 <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>contact us</h4>
+                                    <h4>Bize Ulaş</h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul class="location">
@@ -745,7 +683,6 @@
                                         <li><i class="fa fa-phone"></i>0212 123 456</li>
                                         <li><i class="fa fa-map-marker"></i>Adres: Oyun Kutusu Oyuncak, Orhanlı, Balaban Sok. No:13, PAT Lojistik, 34956 Tuzla/İstanbul</li>
                                     </ul>
-                                    
                                 </div>
                             </div> <!-- single widget end -->
                         </div> <!-- single widget column end -->
@@ -756,11 +693,10 @@
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">Hesabım</a></li>
+                                        <li><a href="my-account.html">Hesabım</a></li>
                                         <li><a href="#">Sepetim</a></li>
-                                        <li><a href="#">checkout</a></li>
-                                        <li><a href="#">İstek Listesi</a></li>
-                                        <li><a href="#">Giriş Yap</a></li>
+                                        <li><a href="cart.html">İstek Listesi</a></li>
+                                        <li><a href="login-register.html">Giriş Yap</a></li>
                                     </ul>
                                 </div>
                             </div> <!-- single widget end -->
@@ -768,31 +704,33 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-widget mb-sm-30">
                                 <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>short code</h4>
+                                    <h4>Kısayollar</h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">gallery</a></li>
-                                        <li><a href="#">accordion</a></li>
-                                        <li><a href="#">carousel</a></li>
-                                        <li><a href="#">map</a></li>
-                                        <li><a href="#">tab</a></li>
+                                        <li><a href="blog-details.html">Blog</a></li>
+                                        <li><a href="contact-us.html">İletişim</a></li>
+                                        <li><a href="hakkımızda.html">Hakkımızda</a></li>
+                                        <li><a href="misviz.html">Misyonumuz-Vizyonumuz</a></li>
+                                        <li><a href="istatistikler.html">İstatistikler</a></li>
+                                        <li><a href="birim.html">Birimlerimiz</a></li>
+                                        <li><a href="birim.html">Birimlerimiz</a></li>
                                     </ul>
                                 </div>
-                            </div> <!-- single widget end -->
+                            </div>  <!-- single widget end -->
                         </div> <!-- single widget column end -->
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-widget mb-sm-30">
                                 <div class="widget-title mb-10 mb-sm-6">
-                                    <h4>product tags</h4>
+                                    <h4>Ürün Kategorileri</h4>
                                 </div>
                                 <div class="widget-body">
                                     <ul>
-                                        <li><a href="#">computer</a></li>
-                                        <li><a href="#">camera</a></li>
-                                        <li><a href="#">smart phone</a></li>
-                                        <li><a href="#">watch</a></li>
-                                        <li><a href="#">tablet</a></li>
+                                        <li><a href="kart.html">Kart Oyunları</a></li>
+                                        <li><a href="kutu.html">Kutu Oyunları</a></li>
+                                        <li><a href="cocuk.html">Çocuk</a></li>
+                                        <li><a href="aksesuar.html">Aksesuar</a></li>
+                                        
                                     </ul>
                                 </div>
                             </div> <!-- single widget end -->
@@ -802,7 +740,7 @@
             </div>
             <!-- footer main end -->
 
-            
+           
 
         </footer>
         <!-- footer area end -->
@@ -848,7 +786,7 @@
                             </div>
                             <div class="col-lg-7">
                                 <div class="product-details-des mt-md-34 mt-sm-34">
-                                    <h3><a href="tm-baslangic.html">external product 12</a></h3>
+                                    <h3><a href="product-details.html">external product 12</a></h3>
                                     <div class="ratings">
                                         <span class="good"><i class="fa fa-star"></i></span>
                                         <span class="good"><i class="fa fa-star"></i></span>
@@ -889,8 +827,7 @@
 
     <!-- Scroll to top start -->
     <div class="scroll-top not-visible">
-        <i class="fa fa-angle-up" onclick="enUsteCik()"></i>
-        <script src="assets/js/scrollUp.js"></script>
+        <i class="fa fa-angle-up"></i>
     </div>
     <!-- Scroll to Top End -->
 
