@@ -170,6 +170,19 @@ img {
 .img-full img {
     width: 100%;
 }
+.img-full_ img {
+    width: 77%;
+    height: 250px;
+    display: block; /* Resmi blok element olarak görüntüle */
+    margin-left: auto; /* Sol kenarlık için otomatik */
+    margin-right: auto;
+    
+}@media screen and (max-width: 600px) {
+    .img-full_ img {
+        width: 100%;
+        height: auto;
+    }
+}
 
 .img-container {
     position: relative;
@@ -241,10 +254,12 @@ img {
     max-width: 300px;
 }
 
+
 @media only screen and (max-width: 767px) {
     .imgs-res {
         max-height: 248px;
     }
+   
 }
 
 @media only screen and (max-width: 575px) {
