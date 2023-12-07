@@ -1582,7 +1582,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     right: 25px;
     top: 0;
     line-height: 50px;
-    font-family: "Brush Script MT", Cursive;
+    font-family: "FontAwesome";
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -6792,7 +6792,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     content: "\f0da";
     padding: 0 6px;
     margin-right: 6px;
-    font-family: "Brush Script MT", Cursive;
+    font-family: fontawesome;
 }
 
 @media only screen and (max-width: 479px) {
@@ -7333,7 +7333,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     content: "\f0da";
     padding-right: 10px;
     color: #d8373e;
-    font-family: "Brush Script MT", Cursive;
+    font-family: "FontAwesome";
 }
 
 .footer-widget .widget-body ul li:last-child {
@@ -7563,7 +7563,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     left: 50%;
     font-size: 12px;
     content: "\f00c";
-    font-family: "Brush Script MT", Cursive;
+    font-family: "FontAwesome";
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
